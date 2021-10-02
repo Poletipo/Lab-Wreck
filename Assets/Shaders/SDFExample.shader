@@ -40,6 +40,14 @@ Shader "LabWreck/SDFExample"
 
             fixed4 frag (v2f i) : SV_Target
             {
+                float2 coord = float2(i.uv.x * 8, i.uv.y);
+                float2 ref = float2(clamp(coord.x, 0.5, 7.5), 0.5);
+                float sdf = distance(coord, ref) *2 -1;
+                clip(-sdf);
+                
+                return float4(coord, 0,1);
+
+
                 return _Color;
             }
             ENDCG
