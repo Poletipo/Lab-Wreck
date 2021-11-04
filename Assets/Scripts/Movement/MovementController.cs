@@ -13,7 +13,7 @@ public class MovementController : MonoBehaviour {
         get { return _jumpInput; }
         set {
             if (value != _jumpInput) {
-                if (value == true) {
+                if (value == true && jumpCount < MaxJumpCount) {
                     desiredJump = true;
                 }
                 _jumpInput = value;
@@ -22,11 +22,10 @@ public class MovementController : MonoBehaviour {
         }
     }
 
-
-
     Rigidbody rb;
 
     [Header("Movement")]
+    public Transform PlayerInputSpace = default;
     public float MaxSpeed = 8;
     public float MaxAcceleration = 2;
     public float MaxDecceleration = 2;
@@ -40,18 +39,45 @@ public class MovementController : MonoBehaviour {
     public int MaxJumpCount = 2;
 
     // PRIVATE
-    Vector3 groundNormal;
-    float maxDotGroundAngle = 0;
+    private Vector3 groundNormal;
+    private float maxDotGroundAngle = 0;
     //movement
-    Vector3 Velocity;
-    Vector3 desiredVelocity;
-    Vector3 direction;
-    float acceleration = 0;
+    private Vector3 Velocity;
+    private Vector3 desiredVelocity;
+    private Vector3 direction;
+    private float acceleration = 0;
+    private Vector3 finalDirection;
 
     //Jumping
-    bool desiredJump = false;
-    bool onGround = false;
-    int jumpCount = 0;
+    private bool desiredJump = false;
+    private int jumpCount = 0;
+
+    private bool _onGround;
+
+    public bool OnGround {
+        get { return _onGround; }
+        set {
+            if (value != _onGround) {
+                if (value == true) {
+                    jumpCount = 0;
+                }
+                _onGround = value;
+                //GroundContactChanging();
+            }
+        }
+    }
+
+    private void GroundContactChanging()
+    {
+        if (OnGround) {
+            rb.useGravity = false;
+        }
+        else {
+            rb.useGravity = true;
+        }
+    }
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -70,24 +96,20 @@ public class MovementController : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        ClearState();
         Velocity = rb.velocity;
 
-        //TODO: fixed number of jump
-        // If desired jump in air, jumps on next onGround
         if (desiredJump) {
             Jump();
         }
         Move();
 
         rb.velocity = Velocity;
+        ClearState();
     }
 
     private void Jump()
     {
-        if (onGround || jumpCount < MaxJumpCount) {
-            Debug.Log(onGround);
-            //onGround = false;
+        if (OnGround || jumpCount < MaxJumpCount) {
             desiredJump = false;
             jumpCount++;
             float jumpVelocity = Mathf.Sqrt(-2f * Physics.gravity.y * JumpHeight);
@@ -103,7 +125,7 @@ public class MovementController : MonoBehaviour {
 
     private void UpdateJump()
     {
-        if (!onGround) {
+        if (!OnGround) {
             //Better Jump
             if (rb.velocity.y < 0) {
                 rb.velocity += Vector3.up * Physics.gravity.y * (FallMultiplier - 1) * Time.deltaTime;
@@ -116,25 +138,35 @@ public class MovementController : MonoBehaviour {
 
     private void Move()
     {
-        direction = new Vector3(MoveInput.x, 0, MoveInput.y);
-        direction = Vector3.ClampMagnitude(direction, 1); ;
+        //TODO: Move player along ground surface
+        direction = new Vector3(MoveInput.x, 0, MoveInput.y).normalized;
+        direction = PlayerInputSpace.TransformDirection(direction);
+        direction = direction - groundNormal * Vector3.Dot(direction, groundNormal);
+
+        direction *= Mathf.Clamp01(MoveInput.magnitude);
+
+        if (direction.magnitude > 0) {
+            finalDirection = direction;
+        }
 
         desiredVelocity = direction * MaxSpeed;
 
-        Debug.DrawRay(transform.position, direction * 3, Color.red);
+        Debug.DrawRay(transform.position, finalDirection * 3, Color.red);
+        Debug.DrawRay(transform.position, groundNormal * 3, Color.blue);
 
-        if (onGround) {
+        if (OnGround) {
             acceleration = MoveInput.magnitude > 0 ? MaxAcceleration : MaxDecceleration;
         }
         else {
             acceleration = MaxAirAcceleration;
         }
 
-
         float maxAccelerationRate = acceleration * Time.deltaTime;
+        float maxAccelerationRateX = maxAccelerationRate * Mathf.Abs(finalDirection.x);
+        float maxAccelerationRateZ = maxAccelerationRate * Mathf.Abs(finalDirection.z);
 
-        Velocity.x = Mathf.MoveTowards(Velocity.x, desiredVelocity.x, maxAccelerationRate);
-        Velocity.z = Mathf.MoveTowards(Velocity.z, desiredVelocity.z, maxAccelerationRate);
+        Velocity.x = Mathf.MoveTowards(Velocity.x, desiredVelocity.x, maxAccelerationRateX);
+        Velocity.z = Mathf.MoveTowards(Velocity.z, desiredVelocity.z, maxAccelerationRateZ);
     }
 
     private void Setup()
@@ -147,9 +179,6 @@ public class MovementController : MonoBehaviour {
     private void ClearState()
     {
         groundNormal = Vector3.zero;
-        if (onGround) {
-            jumpCount = 0;
-        }
     }
 
     private void InputReception()
@@ -171,7 +200,7 @@ public class MovementController : MonoBehaviour {
 
     private void OnCollisionExit(Collision collision)
     {
-        onGround = false;
+        OnGround = false;
     }
 
     private void EvaluationCollision(Collision collision)
@@ -189,7 +218,7 @@ public class MovementController : MonoBehaviour {
 
         groundNormal.Normalize();
 
-        onGround = groundNormal == Vector3.zero ? false : true;
+        OnGround = groundNormal == Vector3.zero ? false : true;
 
     }
 }
