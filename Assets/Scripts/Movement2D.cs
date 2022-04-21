@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,10 @@ public class Movement2D : MonoBehaviour {
     float gravityForce = 9.81f;
     float currentAngle = 0;
 
+    public AnimationCurve jumpCurve;
+    private bool isJumping;
+    private float jumpingTime = 0;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -19,6 +24,23 @@ public class Movement2D : MonoBehaviour {
     private void Update()
     {
         inputDirections = Input.GetAxisRaw("Horizontal");
+        if (Input.GetButtonDown("Jump")) {
+            isJumping = true;
+        }
+
+
+        if (isJumping) {
+            Jumping();
+        }
+
+
+    }
+
+    private void Jumping()
+    {
+        float curveValue = jumpCurve.Evaluate(jumpingTime);
+        jumpingTime += Time.deltaTime;
+        Debug.Log(curveValue);
     }
 
     void FixedUpdate()
