@@ -3,17 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour {
-    public Transform follow;
+    public Transform TargetFollow;
+
     private Vector3 offset;
+
     // Start is called before the first frame update
     void Start()
     {
-        offset = transform.position - follow.position;
+        offset = transform.position - TargetFollow.position;
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        transform.position = follow.position + offset;
+        transform.position = TargetFollow.position + offset;
     }
 }

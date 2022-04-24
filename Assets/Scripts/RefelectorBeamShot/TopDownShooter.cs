@@ -23,7 +23,6 @@ public class TopDownShooter : MonoBehaviour {
 
     void Update()
     {
-        //transform.position += transform.forward * Time.deltaTime;
 
         Move();
 
