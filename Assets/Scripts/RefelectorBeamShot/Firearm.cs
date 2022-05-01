@@ -14,6 +14,8 @@ public class Firearm : MonoBehaviour {
 
     public GameObject bullet;
     public Transform muzzlePos;
+    public ParticleSystem MuzzleFlash;
+
     [Range(1, 1000)]
     public int nbBulletPerShot = 1;
     [Range(0, 90)]
@@ -32,6 +34,8 @@ public class Firearm : MonoBehaviour {
     bool canShoot = true;
     bool isBurstFiring = false;
 
+    public int ReboundCount = 1;
+
 
     // Start is called before the first frame update
     void Start()
@@ -42,13 +46,6 @@ public class Firearm : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire1")) {
-            ActivatePrincipalAction();
-        }
-
-        if (Input.GetButtonUp("Fire1")) {
-            DeactivatePrincipalAction();
-        }
 
         fireRateTimer -= Time.deltaTime;
 
@@ -95,7 +92,8 @@ public class Firearm : MonoBehaviour {
 
             Vector3 bulletDirection = bulletAngle * Vector3.forward;
 
-            projectile.GetComponent<ReflectorBullet>().BulletSetup(bulletDirection);
+            projectile.GetComponent<ReflectorBullet>().BulletSetup(bulletDirection, ReboundCount);
+            MuzzleFlash.Play();
         }
 
         fireRateTimer = fireRateSpeed;

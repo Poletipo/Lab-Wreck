@@ -37,8 +37,9 @@ public class ReflectorBullet : MonoBehaviour {
     private RaycastHit hitInfo;
     private int currentRebound = 0;
 
-    public void BulletSetup(Vector3 direction)
+    public void BulletSetup(Vector3 direction, int reboundCount)
     {
+        MaxRebound = reboundCount;
         _direction = direction;
     }
 
@@ -75,8 +76,12 @@ public class ReflectorBullet : MonoBehaviour {
 
         if (hitable != null) {
             hitable.Hit(BulletDamage);
-            target.GetComponent<NavMeshAgent>().velocity = _direction * 5;
-            target.GetComponent<Health>().Hurt(BulletDamage);
+
+            if (target.tag == "Enemy") {
+                target.GetComponent<NavMeshAgent>().velocity = _direction * 5;
+                target.GetComponent<Health>().Hurt(BulletDamage);
+                target.GetComponent<ZombieEnemy>().Stun();
+            }
         }
 
         EndBullet();

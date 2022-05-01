@@ -13,90 +13,110 @@ public class Spawner : MonoBehaviour {
 
     List<SpawnPointValue> possibleSpawningPoints;
 
-    public Transform Player;
+    private Transform Player;
     public GameObject SpawnedObject;
     public float IntervalSpawnTime = 5;
+    private float _intervalSpawnTimer = 0;
     public Camera cam;
     public int ValidSpawnPointCount = 3;
-    Bounds spawnBounds;
-    NavMeshAgent navMeshAgent;
 
+
+    public AnimationCurve SpawnRateCurve;
+    public int EstimateTimeGame = 600;
+    private float _currentGameTime = 0;
+
+
+    Bounds spawnBounds;
+
+    private NavMeshPath path;
 
     // Start is called before the first frame update
     void Start()
     {
+        Player = GameManager.Instance.Player.transform;
         spawnBounds = GetComponent<BoxCollider>().bounds;
-        navMeshAgent = GetComponent<NavMeshAgent>();
-        StartAutomaticSpawn();
+        path = new NavMeshPath();
     }
 
-    private async void StartAutomaticSpawn()
+    private void StartAutomaticSpawn()
     {
 
         possibleSpawningPoints = new List<SpawnPointValue>();
 
-        while (Application.isPlaying) {
+        possibleSpawningPoints.Clear();
 
-            possibleSpawningPoints.Clear();
+        for (int i = 0; i < transform.childCount; i++) {
 
-            for (int i = 0; i < transform.childCount; i++) {
+            Transform child = transform.GetChild(i);
 
-                Transform child = transform.GetChild(i);
+            if (IsOutOfScreen(child)) {
 
-                if (IsOutOfScreen(child)) {
+                NavMesh.CalculatePath(child.position, Player.position, NavMesh.AllAreas, path);
 
-                    float distance = Vector3.Distance(child.position, Player.position);
-
-                    int index = 0;
-                    bool isSmaller = false;
-
-                    for (int j = 0; j < possibleSpawningPoints.Count; j++) {
-
-                        index = j;
-                        if (distance < possibleSpawningPoints[j].distance) {
-                            isSmaller = true;
-                            break;
-                        }
-                    }
-
-                    SpawnPointValue spawnPointValue = new SpawnPointValue();
-                    spawnPointValue.spawnPoint = child;
-                    spawnPointValue.distance = distance;
-
-                    if (isSmaller) {
-                        possibleSpawningPoints.Insert(index, spawnPointValue);
-                    }
-                    else {
-                        possibleSpawningPoints.Add(spawnPointValue);
-                    }
-
-                    if (possibleSpawningPoints.Count > ValidSpawnPointCount)
-                        possibleSpawningPoints.RemoveAt(ValidSpawnPointCount);
-
+                float distance = 0.0f;
+                for (int j = 0; j < path.corners.Length - 1; ++j) {
+                    distance += Vector3.Distance(path.corners[j], path.corners[j + 1]);
                 }
+
+                int index = 0;
+                bool isSmaller = false;
+
+                for (int j = 0; j < possibleSpawningPoints.Count; j++) {
+
+                    index = j;
+                    if (distance < possibleSpawningPoints[j].distance) {
+                        isSmaller = true;
+                        break;
+                    }
+                }
+
+                SpawnPointValue spawnPointValue = new SpawnPointValue();
+                spawnPointValue.spawnPoint = child;
+                spawnPointValue.distance = distance;
+
+                if (isSmaller) {
+                    possibleSpawningPoints.Insert(index, spawnPointValue);
+                }
+                else {
+                    possibleSpawningPoints.Add(spawnPointValue);
+                }
+
+                if (possibleSpawningPoints.Count > ValidSpawnPointCount)
+                    possibleSpawningPoints.RemoveAt(ValidSpawnPointCount);
+
             }
-
-            Vector3 spawnPosition;
-
-            if (possibleSpawningPoints.Count > 0) {
-
-                int index = Random.Range(0, possibleSpawningPoints.Count);
-
-                spawnPosition = possibleSpawningPoints[index].spawnPoint.position;
-            }
-            else {
-                spawnPosition = RandomPointInBounds(spawnBounds);
-            }
-
-            Instantiate(SpawnedObject, spawnPosition, Quaternion.identity);
-            await Task.Delay((int)(IntervalSpawnTime * 1000));
         }
+
+        Vector3 spawnPosition;
+
+        if (possibleSpawningPoints.Count > 0) {
+
+            int index = Random.Range(0, possibleSpawningPoints.Count);
+
+            spawnPosition = possibleSpawningPoints[index].spawnPoint.position;
+        }
+        else {
+            spawnPosition = RandomPointInBounds(spawnBounds);
+        }
+
+        Instantiate(SpawnedObject, spawnPosition, Quaternion.identity);
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        _currentGameTime += Time.deltaTime;
+        IntervalSpawnTime = SpawnRateCurve.Evaluate(_currentGameTime / EstimateTimeGame);
+
+
+        _intervalSpawnTimer += Time.deltaTime;
+        if (_intervalSpawnTimer >= IntervalSpawnTime) {
+            StartAutomaticSpawn();
+
+            _intervalSpawnTimer = 0;
+        }
+
 
     }
 
@@ -128,7 +148,7 @@ public class Spawner : MonoBehaviour {
     {
         int spawnPointCount = transform.childCount;
         for (int i = 0; i < spawnPointCount; i++) {
-            Gizmos.color = Color.grey;
+            Gizmos.color = Color.blue;
             Gizmos.DrawSphere(transform.GetChild(i).transform.position, .5f);
         }
         if (possibleSpawningPoints != null) {

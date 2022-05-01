@@ -20,7 +20,7 @@ public class Health : MonoBehaviour {
     public float InvincibleTime = 1f;
     private bool _isInvincible = false;
 
-    [SerializeField, Range(1, 50)]
+    [SerializeField, Range(1, 200)]
     private int _maxHp = 1;
     public int MaxHp {
         get { return _maxHp; }
@@ -32,16 +32,16 @@ public class Health : MonoBehaviour {
         }
     }
 
-    [SerializeField, Range(0, 50)]
+    [SerializeField, Range(0, 200)]
     private int _hp = 1;
     public int Hp {
         get { return _hp; }
         set {
             int temp = _hp;
             _hp = Mathf.Clamp(value, 0, MaxHp);
+
             if (_hp != temp) {
                 OnHpChanged?.Invoke();
-
                 if (_hp <= 0) {
                     OnDeath?.Invoke();
                 }
