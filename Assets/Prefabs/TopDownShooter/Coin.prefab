@@ -61,6 +61,7 @@ MonoBehaviour:
   CoinValue: 50
   rb: {fileID: 911538891395398691}
   TimeAlive: 45
+  CoinShuffle: {fileID: 8300000, guid: 19d00f7ed2d42f54d8759d35d5e2fff6, type: 3}
 --- !u!1 &911538891395398688
 GameObject:
   m_ObjectHideFlags: 0

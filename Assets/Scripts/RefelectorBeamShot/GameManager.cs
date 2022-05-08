@@ -9,16 +9,21 @@ public class GameManager : MonoBehaviour {
     public static GameManager Instance {
         get {
             if (_instance == null) {
+
                 GameObject gameManagerGameObject = Resources.Load<GameObject>("GameManager");
                 GameObject managerObject = Instantiate(gameManagerGameObject);
                 _instance = managerObject.GetComponent<GameManager>();
                 _instance.Initialize();
+
+                DontDestroyOnLoad(_instance);
+
             }
             return _instance;
         }
     }
 
     public GameObject Player { get; private set; }
+    public AudioSource AudioManager { get; private set; }
     public GameUI GameUI { get; private set; }
 
     private void Initialize()
@@ -37,6 +42,7 @@ public class GameManager : MonoBehaviour {
     {
         Player = GameObject.FindGameObjectWithTag("Player");
         GameUI = GameObject.FindGameObjectWithTag("GameUI").GetComponent<GameUI>();
+        AudioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioSource>();
     }
 
 }

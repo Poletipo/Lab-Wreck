@@ -13,9 +13,12 @@ public class ZombieEnemy : MonoBehaviour {
     Health playerHealth;
     Hitable hitable;
 
+    public AudioClip[] punchSound;
+    public AudioClip[] ExplosionSound;
     public GameObject StunnedStar;
 
     public GameObject Coin;
+    public GameObject Explosion;
 
     public float MinHurtDistance = 5f;
     public float hitInterval = 5f;
@@ -34,15 +37,30 @@ public class ZombieEnemy : MonoBehaviour {
         playerHealth = player.GetComponent<Health>();
         agent = GetComponent<NavMeshAgent>();
         health = GetComponent<Health>();
+        health.OnHurt += OnHurt;
         health.OnDeath += OnDeath;
 
         hitable = GetComponent<Hitable>();
+    }
 
+    public void Setup(int hp)
+    {
+        health = GetComponent<Health>();
+        health.MaxHp = hp;
+        health.Hp = hp;
+    }
+
+
+    private void OnHurt()
+    {
+        AudioSource.PlayClipAtPoint(punchSound[UnityEngine.Random.Range(0, punchSound.Length)], transform.position, 1f);
     }
 
     private void OnDeath()
     {
         Instantiate(Coin, transform.position, UnityEngine.Random.rotation);
+        Instantiate(Explosion, transform.position, Quaternion.identity);
+        AudioSource.PlayClipAtPoint(ExplosionSound[UnityEngine.Random.Range(0, ExplosionSound.Length)], transform.position, 1f);
         Destroy(gameObject);
     }
 

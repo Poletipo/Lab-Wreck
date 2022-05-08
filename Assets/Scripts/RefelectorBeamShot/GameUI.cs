@@ -24,6 +24,10 @@ public class GameUI : MonoBehaviour {
     [Header("Shop")]
     public GameObject GameOverOrigin;
 
+    [Header("Timer")]
+    public TextMeshProUGUI TimerValue;
+
+
     private GameObject _player;
     private Health playerHealth;
     private TopDownShooter playerTopDownShooter;
@@ -80,6 +84,15 @@ public class GameUI : MonoBehaviour {
         GetComponent<CanvasGroup>().alpha = 1;
     }
 
+    public void UpdateTimer(float time)
+    {
+
+        int seconds = Mathf.FloorToInt(time) % 60;
+        int minutes = Mathf.FloorToInt(time) / 60;
+
+        TimerValue.text = minutes.ToString("00") + ":" + seconds.ToString("00");
+
+    }
 
     // Update is called once per frame
     void Update()

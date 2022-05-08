@@ -13,6 +13,7 @@ public class Spawner : MonoBehaviour {
 
     List<SpawnPointValue> possibleSpawningPoints;
 
+    [Header("Spawner Parameters")]
     private Transform Player;
     public GameObject SpawnedObject;
     public float IntervalSpawnTime = 5;
@@ -20,8 +21,11 @@ public class Spawner : MonoBehaviour {
     public Camera cam;
     public int ValidSpawnPointCount = 3;
 
-
+    [Header("Cats Parameters")]
     public AnimationCurve SpawnRateCurve;
+    public int HealthStart = 15;
+    public int HealthTimeMuliplier = 60;
+    public int HealthAddition = 1;
     public int EstimateTimeGame = 600;
     private float _currentGameTime = 0;
 
@@ -99,14 +103,21 @@ public class Spawner : MonoBehaviour {
             spawnPosition = RandomPointInBounds(spawnBounds);
         }
 
-        Instantiate(SpawnedObject, spawnPosition, Quaternion.identity);
+        GameObject cat = Instantiate(SpawnedObject, spawnPosition, Quaternion.identity);
 
+
+        int catHp = HealthStart + Mathf.FloorToInt(_currentGameTime / HealthTimeMuliplier) * HealthAddition;
+
+        cat.GetComponent<ZombieEnemy>().Setup(catHp);
     }
 
     // Update is called once per frame
     void Update()
     {
         _currentGameTime += Time.deltaTime;
+
+        GameManager.Instance.GameUI.UpdateTimer(_currentGameTime);
+
         IntervalSpawnTime = SpawnRateCurve.Evaluate(_currentGameTime / EstimateTimeGame);
 
 
@@ -155,7 +166,6 @@ public class Spawner : MonoBehaviour {
 
             for (int i = 0; i < possibleSpawningPoints.Count; i++) {
                 Gizmos.color = Color.green;
-                //Debug.Log(possibleSpawningPoints[i].spawnPoint.name);
                 Gizmos.DrawSphere(possibleSpawningPoints[i].spawnPoint.position, .7f);
 
             }

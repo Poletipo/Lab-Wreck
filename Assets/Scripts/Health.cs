@@ -83,6 +83,11 @@ public class Health : MonoBehaviour {
 
     public async void WaitInvincibleFrames(float duration)
     {
+
+        if (_isInvincible) {
+            return;
+        }
+
         _isInvincible = true;
 
         float end = Time.time + duration;

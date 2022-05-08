@@ -23,7 +23,7 @@ public class ReflectorBullet : MonoBehaviour {
     [Range(0, 100)]
     public int BulletDamage = 2;
     [Range(0, 10)]
-    public int DamageAdditioner = 1;
+    public int DamageMinus = 1;
 
     [Header("Vfx")]
     public Transform ImpactVFX;
@@ -127,7 +127,7 @@ public class ReflectorBullet : MonoBehaviour {
             EndBullet();
         }
 
-        BulletDamage = BulletDamage + DamageAdditioner >= 1 ? BulletDamage + DamageAdditioner : 1;
+        BulletDamage = BulletDamage - DamageMinus >= 1 ? BulletDamage - DamageMinus : 1;
 
     }
 

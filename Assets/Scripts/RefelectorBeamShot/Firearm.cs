@@ -15,6 +15,7 @@ public class Firearm : MonoBehaviour {
     public GameObject bullet;
     public Transform muzzlePos;
     public ParticleSystem MuzzleFlash;
+    public AudioClip[] ShootSound;
 
     [Range(1, 1000)]
     public int nbBulletPerShot = 1;
@@ -95,7 +96,7 @@ public class Firearm : MonoBehaviour {
             projectile.GetComponent<ReflectorBullet>().BulletSetup(bulletDirection, ReboundCount);
             MuzzleFlash.Play();
         }
-
+        GameManager.Instance.AudioManager.PlayOneShot(ShootSound[UnityEngine.Random.Range(0, ShootSound.Length)], .5f);
         fireRateTimer = fireRateSpeed;
     }
 

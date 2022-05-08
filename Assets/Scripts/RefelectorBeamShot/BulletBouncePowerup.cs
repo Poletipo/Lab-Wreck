@@ -7,6 +7,8 @@ public class BulletBouncePowerup : MonoBehaviour {
     public int Cost = 175;
     public float CostIncreaseMultiplier = 1.5f;
     public Color color;
+    public AudioClip BuySound;
+    public AudioClip DenySound;
 
     private bool _playerInZone = false;
     private GameObject _player;
@@ -29,12 +31,16 @@ public class BulletBouncePowerup : MonoBehaviour {
                 bool validPayment = _player.GetComponent<TopDownShooter>().Pay(Cost);
 
                 if (validPayment) {
+                    GameManager.Instance.AudioManager.PlayOneShot(BuySound);
                     Firearm firearm = _player.GetComponent<Firearm>();
 
                     firearm.ReboundCount += 1;
                     Cost = (int)(Cost * CostIncreaseMultiplier);
 
                     _gameUI.ShowShopPrompt("Bullet Bounce Upgrade", Cost, color);
+                }
+                else {
+                    GameManager.Instance.AudioManager.PlayOneShot(DenySound);
                 }
             }
         }

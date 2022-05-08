@@ -66,6 +66,7 @@ Transform:
   - {fileID: 2550891338359730198}
   - {fileID: 638031413237129083}
   - {fileID: 2016373925009769142}
+  - {fileID: 2092469093136497593}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -101,7 +102,12 @@ MonoBehaviour:
   fireMode: 2
   bullet: {fileID: 3861392954896205496, guid: 826718475d4630043830e9d89b8fe269, type: 3}
   muzzlePos: {fileID: 2016373925009769142}
-  MuzzleFlash: {fileID: 0}
+  MuzzleFlash: {fileID: 2092469093136497598}
+  ShootSound:
+  - {fileID: 8300000, guid: 9a4937b925209dc44b97692085c80490, type: 3}
+  - {fileID: 8300000, guid: 0302ef2c0ec3aea40a8f375c644e66c7, type: 3}
+  - {fileID: 8300000, guid: 0d8f87ed403947342971fbfcfe728bc9, type: 3}
+  - {fileID: 8300000, guid: 5953aea83592b864fb1a7d10d24b6bc1, type: 3}
   nbBulletPerShot: 1
   maxAngleOffset: 0
   fireRateSpeed: 0.2
@@ -114,7 +120,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7741046365085364626}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b157ddcec14e1144d9b1389ed4ae5892, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.89
@@ -317,4 +323,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 059f0f4b9a9e0414b83c3081102ef2a4,
     type: 3}
   m_PrefabInstance: {fileID: 2660553523282843645}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7741046364225155921
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7741046365085364629}
+    m_Modifications:
+    - target: {fileID: 8531024040202750184, guid: d5ec091590928b843b0ea4dbacb78b3f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531024040202750184, guid: d5ec091590928b843b0ea4dbacb78b3f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531024040202750184, guid: d5ec091590928b843b0ea4dbacb78b3f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.327
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531024040202750184, guid: d5ec091590928b843b0ea4dbacb78b3f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.847
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531024040202750184, guid: d5ec091590928b843b0ea4dbacb78b3f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531024040202750184, guid: d5ec091590928b843b0ea4dbacb78b3f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531024040202750184, guid: d5ec091590928b843b0ea4dbacb78b3f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531024040202750184, guid: d5ec091590928b843b0ea4dbacb78b3f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531024040202750184, guid: d5ec091590928b843b0ea4dbacb78b3f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531024040202750184, guid: d5ec091590928b843b0ea4dbacb78b3f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531024040202750184, guid: d5ec091590928b843b0ea4dbacb78b3f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531024040202750189, guid: d5ec091590928b843b0ea4dbacb78b3f,
+        type: 3}
+      propertyPath: m_Name
+      value: VFX_MuzzleFlash
+      objectReference: {fileID: 0}
+    - target: {fileID: 8531024040202750191, guid: d5ec091590928b843b0ea4dbacb78b3f,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d5ec091590928b843b0ea4dbacb78b3f, type: 3}
+--- !u!4 &2092469093136497593 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8531024040202750184, guid: d5ec091590928b843b0ea4dbacb78b3f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7741046364225155921}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2092469093136497598 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8531024040202750191, guid: d5ec091590928b843b0ea4dbacb78b3f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7741046364225155921}
   m_PrefabAsset: {fileID: 0}

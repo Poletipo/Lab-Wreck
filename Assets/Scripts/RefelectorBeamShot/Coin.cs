@@ -7,6 +7,7 @@ public class Coin : MonoBehaviour {
     public int CoinValue = 50;
     public Rigidbody rb;
     public int TimeAlive = 60;
+    public AudioClip CoinShuffle;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,7 @@ public class Coin : MonoBehaviour {
         if (other.tag == "Player") {
 
             other.GetComponent<TopDownShooter>().MoneyAmount += CoinValue;
+            GameManager.Instance.AudioManager.PlayOneShot(CoinShuffle);
 
             Destroy(gameObject.transform.parent.gameObject);
         }

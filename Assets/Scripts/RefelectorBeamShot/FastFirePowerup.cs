@@ -8,6 +8,8 @@ public class FastFirePowerup : MonoBehaviour {
     public float CostIncreaseMultiplier = 1.5f;
     public float FireRateIncreaseMultiplier = 1.2f;
     public Color color;
+    public AudioClip BuySound;
+    public AudioClip DenySound;
 
     private bool _playerInZone = false;
     private GameObject _player;
@@ -29,10 +31,14 @@ public class FastFirePowerup : MonoBehaviour {
                 bool validPayment = _player.GetComponent<TopDownShooter>().Pay(Cost);
 
                 if (validPayment) {
+                    GameManager.Instance.AudioManager.PlayOneShot(BuySound);
                     Firearm firearm = _player.GetComponent<Firearm>();
                     firearm.fireRateSpeed /= FireRateIncreaseMultiplier;
                     Cost = (int)(Cost * CostIncreaseMultiplier);
                     _gameUI.ShowShopPrompt("Fire Rate Upgrade", Cost, color);
+                }
+                else {
+                    GameManager.Instance.AudioManager.PlayOneShot(DenySound);
                 }
 
             }
