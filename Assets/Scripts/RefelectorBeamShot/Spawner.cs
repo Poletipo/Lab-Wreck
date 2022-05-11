@@ -29,7 +29,6 @@ public class Spawner : MonoBehaviour {
     public int EstimateTimeGame = 600;
     private float _currentGameTime = 0;
 
-
     Bounds spawnBounds;
 
     private NavMeshPath path;
@@ -42,7 +41,7 @@ public class Spawner : MonoBehaviour {
         path = new NavMeshPath();
     }
 
-    private void StartAutomaticSpawn()
+    private void SpawnObject()
     {
 
         possibleSpawningPoints = new List<SpawnPointValue>();
@@ -103,12 +102,12 @@ public class Spawner : MonoBehaviour {
             spawnPosition = RandomPointInBounds(spawnBounds);
         }
 
-        GameObject cat = Instantiate(SpawnedObject, spawnPosition, Quaternion.identity);
-
-
+        GameObject cat = PoolManager.GetPoolObject(SpawnedObject);
         int catHp = HealthStart + Mathf.FloorToInt(_currentGameTime / HealthTimeMuliplier) * HealthAddition;
+        cat.GetComponent<ZombieEnemy>().Setup(spawnPosition, Quaternion.identity, catHp);
 
-        cat.GetComponent<ZombieEnemy>().Setup(catHp);
+
+
     }
 
     // Update is called once per frame
@@ -120,10 +119,9 @@ public class Spawner : MonoBehaviour {
 
         IntervalSpawnTime = SpawnRateCurve.Evaluate(_currentGameTime / EstimateTimeGame);
 
-
         _intervalSpawnTimer += Time.deltaTime;
         if (_intervalSpawnTimer >= IntervalSpawnTime) {
-            StartAutomaticSpawn();
+            SpawnObject();
 
             _intervalSpawnTimer = 0;
         }

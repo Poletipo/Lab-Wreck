@@ -43,11 +43,15 @@ public class ZombieEnemy : MonoBehaviour {
         hitable = GetComponent<Hitable>();
     }
 
-    public void Setup(int hp)
+    public void Setup(Vector3 position, Quaternion rotation, int hp)
     {
         health = GetComponent<Health>();
         health.MaxHp = hp;
         health.Hp = hp;
+
+        transform.position = position;
+        transform.rotation = rotation;
+        gameObject.SetActive(true);
     }
 
 
@@ -58,10 +62,19 @@ public class ZombieEnemy : MonoBehaviour {
 
     private void OnDeath()
     {
-        Instantiate(Coin, transform.position, UnityEngine.Random.rotation);
-        Instantiate(Explosion, transform.position, Quaternion.identity);
-        AudioSource.PlayClipAtPoint(ExplosionSound[UnityEngine.Random.Range(0, ExplosionSound.Length)], transform.position, 1f);
-        Destroy(gameObject);
+        GameObject coin = PoolManager.GetPoolObject(Coin);
+        coin.GetComponent<Coin>().Setup(transform.position, Quaternion.identity);
+
+
+        //Instantiate(Explosion, transform.position, Quaternion.identity);
+        GameObject explosion = PoolManager.GetPoolObject(Explosion);
+        explosion.GetComponent<DestroyVFX>().Setup(transform.position, Quaternion.identity);
+
+
+
+        //AudioSource.PlayClipAtPoint(ExplosionSound[UnityEngine.Random.Range(0, ExplosionSound.Length)], transform.position, 1f);
+        gameObject.SetActive(false);
+        //Destroy(gameObject);
     }
 
     void OnHit()

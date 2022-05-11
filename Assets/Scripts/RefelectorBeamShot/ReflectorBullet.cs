@@ -21,12 +21,13 @@ public class ReflectorBullet : MonoBehaviour {
 
     [Header("Damage")]
     [Range(0, 100)]
-    public int BulletDamage = 2;
+    public int BaseBulletDamage = 2;
+    private int _bulletDamage = 2;
     [Range(0, 10)]
     public int DamageMinus = 1;
 
     [Header("Vfx")]
-    public Transform ImpactVFX;
+    public GameObject ImpactVFX;
 
     [Header("Masks")]
     public LayerMask targetedMask;
@@ -37,18 +38,20 @@ public class ReflectorBullet : MonoBehaviour {
     private RaycastHit hitInfo;
     private int currentRebound = 0;
 
-    public void BulletSetup(Vector3 direction, int reboundCount)
+    public void Setup(Vector3 position, Vector3 direction, int reboundCount)
     {
+        _bulletDamage = BaseBulletDamage;
+        transform.position = position;
         MaxRebound = reboundCount;
+        currentRebound = 0;
         _direction = direction;
+        previousPosition = position;
+        gameObject.SetActive(true);
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        previousPosition = transform.position;
-
-        Destroy(gameObject, TimeToDie);
 
     }
 
@@ -75,11 +78,11 @@ public class ReflectorBullet : MonoBehaviour {
         Hitable hitable = target.GetComponent<Hitable>();
 
         if (hitable != null) {
-            hitable.Hit(BulletDamage);
+            hitable.Hit(_bulletDamage);
 
             if (target.tag == "Enemy") {
                 target.GetComponent<NavMeshAgent>().velocity = _direction * 5;
-                target.GetComponent<Health>().Hurt(BulletDamage);
+                target.GetComponent<Health>().Hurt(_bulletDamage);
                 target.GetComponent<ZombieEnemy>().Stun();
             }
         }
@@ -92,7 +95,8 @@ public class ReflectorBullet : MonoBehaviour {
 
         _direction = Vector3.Reflect(_direction, hit.normal).normalized;
 
-        Instantiate(ImpactVFX, hit.point, Quaternion.LookRotation(hit.normal, Vector3.up));
+        GameObject sparks = PoolManager.GetPoolObject(ImpactVFX);
+        sparks.GetComponent<DestroyVFX>().Setup(hit.point, Quaternion.LookRotation(hit.normal, Vector3.up));
 
         if (UnityEngine.Random.Range(0, 100) < TargetingPercent) {
 
@@ -127,18 +131,14 @@ public class ReflectorBullet : MonoBehaviour {
             EndBullet();
         }
 
-        BulletDamage = BulletDamage - DamageMinus >= 1 ? BulletDamage - DamageMinus : 1;
+        _bulletDamage = _bulletDamage - DamageMinus >= 1 ? _bulletDamage - DamageMinus : 1;
 
     }
 
     private void EndBullet()
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        //Destroy(gameObject);
     }
-
-    //private void OnDrawGizmos()
-    //{
-    //    Gizmos.DrawWireSphere(transform.position, TargetingRadius);
-    //}
 
 }

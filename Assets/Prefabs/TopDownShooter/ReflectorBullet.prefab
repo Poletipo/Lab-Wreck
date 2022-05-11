@@ -217,9 +217,9 @@ MonoBehaviour:
   MaxRebound: 9
   TargetingPercent: 50
   TimeToDie: 8
-  BulletDamage: 4
-  DamageAdditioner: 1
-  ImpactVFX: {fileID: 8531024040202750184, guid: fd80b09a611783f41b68583a41bff33f,
+  BaseBulletDamage: 4
+  DamageMinus: 1
+  ImpactVFX: {fileID: 8531024040202750189, guid: fd80b09a611783f41b68583a41bff33f,
     type: 3}
   targetedMask:
     serializedVersion: 2

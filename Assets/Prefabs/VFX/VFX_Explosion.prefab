@@ -14620,3 +14620,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c1e61f851731a14584b094783419589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsPooled: 1

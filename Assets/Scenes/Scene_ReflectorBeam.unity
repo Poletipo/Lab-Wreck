@@ -9355,7 +9355,6 @@ GameObject:
   - component: {fileID: 783173602}
   - component: {fileID: 783173605}
   - component: {fileID: 783173604}
-  - component: {fileID: 783173603}
   m_Layer: 9
   m_Name: Floor (10)
   m_TagString: Untagged
@@ -9377,20 +9376,6 @@ Transform:
   m_Father: {fileID: 2017569508}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: -90}
---- !u!64 &783173603
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 783173601}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &783173604
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13440,7 +13425,6 @@ GameObject:
   - component: {fileID: 1107085364}
   - component: {fileID: 1107085367}
   - component: {fileID: 1107085366}
-  - component: {fileID: 1107085365}
   m_Layer: 9
   m_Name: Floor (4)
   m_TagString: Untagged
@@ -13462,20 +13446,6 @@ Transform:
   m_Father: {fileID: 2017569508}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: -90}
---- !u!64 &1107085365
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1107085363}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1107085366
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13745,8 +13715,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0.016052801
-      value: 3.0544693
+      time: 0.05
+      value: 2.5225992
       inSlope: -0.45259944
       outSlope: -0.45259944
       tangentMode: 0
@@ -13754,35 +13724,26 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.35408223
     - serializedVersion: 3
-      time: 0.30476412
-      value: 1.8627334
-      inSlope: -4.390017
-      outSlope: -4.390017
+      time: 0.35968742
+      value: 0.88081115
+      inSlope: -1.9827007
+      outSlope: -1.9827007
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.13526635
+      outWeight: 0.26327845
     - serializedVersion: 3
-      time: 0.464457
-      value: 1.165521
-      inSlope: -4.1368876
-      outSlope: -4.1368876
+      time: 0.65000004
+      value: 0.43901187
+      inSlope: -1.0357449
+      outSlope: -1.0357449
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.70248646
-      value: 0.46891
-      inSlope: -1.4764347
-      outSlope: -1.4764347
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.34598944
+      inWeight: 0.6066165
       outWeight: 0.30365556
     - serializedVersion: 3
-      time: 1.0027568
-      value: 0.13658004
+      time: 1
+      value: 0.22597513
       inSlope: -0.34904656
       outSlope: -0.34904656
       tangentMode: 0
@@ -13790,8 +13751,8 @@ MonoBehaviour:
       inWeight: 0.28216353
       outWeight: 0.14128253
     - serializedVersion: 3
-      time: 1.4986267
-      value: 0.07886578
+      time: 1.5
+      value: 0.16826087
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -13802,9 +13763,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   HealthStart: 15
-  HealthTimeMuliplier: 180
+  HealthTimeMuliplier: 120
   HealthAddition: 1
-  EstimateTimeGame: 600
+  EstimateTimeGame: 10
 --- !u!1001 &1128568237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14179,7 +14140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 5b00c531ccc8087419d3b61acf0d72c8, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 2fa3514ded652194695b8a23de084580, type: 2}
   isGlobal: 1
   blendDistance: 0
   weight: 1
@@ -14661,7 +14622,6 @@ GameObject:
   - component: {fileID: 1196262883}
   - component: {fileID: 1196262886}
   - component: {fileID: 1196262885}
-  - component: {fileID: 1196262884}
   m_Layer: 9
   m_Name: Floor (8)
   m_TagString: Untagged
@@ -14683,20 +14643,6 @@ Transform:
   m_Father: {fileID: 2017569508}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: -90}
---- !u!64 &1196262884
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1196262882}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1196262885
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14937,7 +14883,6 @@ GameObject:
   - component: {fileID: 1236404833}
   - component: {fileID: 1236404836}
   - component: {fileID: 1236404835}
-  - component: {fileID: 1236404834}
   m_Layer: 9
   m_Name: Floor (22)
   m_TagString: Untagged
@@ -14959,20 +14904,6 @@ Transform:
   m_Father: {fileID: 2017569508}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: -90}
---- !u!64 &1236404834
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236404832}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1236404835
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23842,10 +23773,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1140588111, guid: 41a5023738c6d2b40a27662f4256e0c1, type: 3}
-      propertyPath: m_TagString
-      value: AudioManager
-      objectReference: {fileID: 0}
     - target: {fileID: 186354936787852697, guid: 41a5023738c6d2b40a27662f4256e0c1,
         type: 3}
       propertyPath: m_RootOrder
@@ -24462,7 +24389,12 @@ PrefabInstance:
     - target: {fileID: 7741046365085364617, guid: c1c4c4fa0ec79504da56e9c7695737c8,
         type: 3}
       propertyPath: _moneyAmount
-      value: 0
+      value: 500000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7741046365085364621, guid: c1c4c4fa0ec79504da56e9c7695737c8,
+        type: 3}
+      propertyPath: InvincibleTime
+      value: 56.3
       objectReference: {fileID: 0}
     - target: {fileID: 7741046365085364626, guid: c1c4c4fa0ec79504da56e9c7695737c8,
         type: 3}

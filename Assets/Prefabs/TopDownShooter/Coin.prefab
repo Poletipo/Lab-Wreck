@@ -1,67 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &911538890584748094
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 911538890584748033}
-  - component: {fileID: 911538890584748035}
-  - component: {fileID: 911538890584748032}
-  m_Layer: 11
-  m_Name: TriggerZone
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &911538890584748033
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 911538890584748094}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 911538891395398695}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &911538890584748035
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 911538890584748094}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 2.04
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &911538890584748032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 911538890584748094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 071bbd138d9acb84d8e60beb5a2580c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CoinValue: 50
-  rb: {fileID: 911538891395398691}
-  TimeAlive: 45
-  CoinShuffle: {fileID: 8300000, guid: 19d00f7ed2d42f54d8759d35d5e2fff6, type: 3}
 --- !u!1 &911538891395398688
 GameObject:
   m_ObjectHideFlags: 0
@@ -73,6 +11,8 @@ GameObject:
   - component: {fileID: 911538891395398695}
   - component: {fileID: 911538891395398691}
   - component: {fileID: 911538891395398690}
+  - component: {fileID: 4123444219789493429}
+  - component: {fileID: 1073782773178041084}
   m_Layer: 11
   m_Name: Coin
   m_TagString: Untagged
@@ -91,7 +31,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.39801, y: 0.1730062, z: 0.39801}
   m_Children:
-  - {fileID: 911538890584748033}
   - {fileID: 5742617875879819150}
   - {fileID: 9009915060192948001}
   m_Father: {fileID: 0}
@@ -126,6 +65,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.55, y: 1.33, z: 1.49}
   m_Center: {x: 0.00000007487833, y: 0.016326372, z: -0.00000007487833}
+--- !u!136 &4123444219789493429
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911538891395398688}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2.04
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1073782773178041084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911538891395398688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 071bbd138d9acb84d8e60beb5a2580c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CoinValue: 50
+  rb: {fileID: 911538891395398691}
+  TimeAlive: 45
+  CoinShuffle: {fileID: 8300000, guid: 19d00f7ed2d42f54d8759d35d5e2fff6, type: 3}
 --- !u!1 &4900721171275259608
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,7 +125,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 911538891395398695}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!198 &7616078372329460445
 ParticleSystem:
@@ -4949,7 +4918,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c6385f6e9a60bb142aee9d3191985dc2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c6385f6e9a60bb142aee9d3191985dc2,
         type: 3}
