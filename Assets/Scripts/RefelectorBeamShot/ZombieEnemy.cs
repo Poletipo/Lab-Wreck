@@ -19,6 +19,7 @@ public class ZombieEnemy : MonoBehaviour {
 
     public GameObject Coin;
     public GameObject Explosion;
+    public GameObject BurnMark;
 
     public float MinHurtDistance = 5f;
     public float hitInterval = 5f;
@@ -66,15 +67,15 @@ public class ZombieEnemy : MonoBehaviour {
         coin.GetComponent<Coin>().Setup(transform.position, Quaternion.identity);
 
 
-        //Instantiate(Explosion, transform.position, Quaternion.identity);
+        Instantiate(BurnMark, new Vector3(transform.position.x, 0.1f, transform.position.z), Quaternion.Euler(90, 0, UnityEngine.Random.Range(0f, 360f)));
         GameObject explosion = PoolManager.GetPoolObject(Explosion);
         explosion.GetComponent<DestroyVFX>().Setup(transform.position, Quaternion.identity);
 
 
-
-        //AudioSource.PlayClipAtPoint(ExplosionSound[UnityEngine.Random.Range(0, ExplosionSound.Length)], transform.position, 1f);
+        float shakeValue = (1.0f - (Vector3.Distance(transform.position, player.transform.position) / 15f));
+        GameManager.Instance.CameraObject.GetComponent<CameraShake>().AddTrauma(shakeValue);
+        AudioSource.PlayClipAtPoint(ExplosionSound[UnityEngine.Random.Range(0, ExplosionSound.Length)], transform.position, 1f);
         gameObject.SetActive(false);
-        //Destroy(gameObject);
     }
 
     void OnHit()
@@ -88,7 +89,6 @@ public class ZombieEnemy : MonoBehaviour {
         float distance = Vector3.Distance(transform.position, player.transform.position);
 
         if (distance < MinHurtDistance && hitIntervalTimer >= hitInterval && !_isStunned) {
-
             playerHealth.Hurt((int)(MinHurtDistance / distance));
 
             hitIntervalTimer = 0;

@@ -223,7 +223,7 @@ MonoBehaviour:
     type: 3}
   targetedMask:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 5120
   wallMask:
     serializedVersion: 2
-    m_Bits: 1536
+    m_Bits: 5632

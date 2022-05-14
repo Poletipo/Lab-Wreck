@@ -94,6 +94,7 @@ public class Firearm : MonoBehaviour {
 
             projectile.GetComponent<ReflectorBullet>().Setup(muzzlePos.position, bulletDirection, ReboundCount);
             MuzzleFlash.Play();
+            GameManager.Instance.CameraObject.GetComponent<CameraShake>().SetHigherTrauma(0.3f);
         }
         GameManager.Instance.AudioManager.PlayOneShot(ShootSound[UnityEngine.Random.Range(0, ShootSound.Length)], .5f);
         fireRateTimer = fireRateSpeed;

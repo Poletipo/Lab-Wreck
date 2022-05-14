@@ -2226,6 +2226,7 @@ GameObject:
   - component: {fileID: 753145999132838533}
   - component: {fileID: 6316199834440410439}
   - component: {fileID: 417452165326567826}
+  - component: {fileID: 868715485}
   m_Layer: 5
   m_Name: GameUI
   m_TagString: GameUI
@@ -2360,12 +2361,48 @@ MonoBehaviour:
     m_Mode: 1
     m_NumColorKeys: 4
     m_NumAlphaKeys: 2
+  HealthAdvancement:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1.3161923
+      outSlope: 1.3161923
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.082689695
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.2011121
+      outSlope: 0.2011121
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.12745112
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   _moneyValue: {fileID: 5600008548721430611}
   ShopOrigin: {fileID: 5470188270780791033}
   ShopPrompt: {fileID: 4216079195744928101}
   ShopCostValue: {fileID: 115913794086119150}
   GameOverOrigin: {fileID: 2219712016652728336}
   TimerValue: {fileID: 786427029083869236}
+--- !u!225 &868715485
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6518308446269792602}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &6538051894117644811
 GameObject:
   m_ObjectHideFlags: 0

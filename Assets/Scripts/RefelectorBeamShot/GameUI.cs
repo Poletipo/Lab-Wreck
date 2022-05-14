@@ -11,6 +11,7 @@ public class GameUI : MonoBehaviour {
     [SerializeField]
     private Image _healthSlider;
     public Gradient HealthColor;
+    public AnimationCurve HealthAdvancement;
 
     [Header("Money")]
     [SerializeField]
@@ -57,8 +58,12 @@ public class GameUI : MonoBehaviour {
 
     private void OnHpChanged()
     {
-        _healthSlider.fillAmount = 1 - (float)playerHealth.Hp / playerHealth.MaxHp;
-        _healthSlider.color = HealthColor.Evaluate(_healthSlider.fillAmount);
+        float hpPercent = 1 - (float)playerHealth.Hp / playerHealth.MaxHp;
+
+        float sliderValue = HealthAdvancement.Evaluate(hpPercent);
+
+        _healthSlider.fillAmount = sliderValue;
+        _healthSlider.color = HealthColor.Evaluate(sliderValue);
     }
 
     public void ShowShopPrompt(string prompt, int cost, Color color)

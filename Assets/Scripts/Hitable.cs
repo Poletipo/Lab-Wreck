@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class Hitable : MonoBehaviour {
 
-    public Action OnHit;
+    public Action<int> OnHit;
 
     public void Hit(int damage)
     {
-        OnHit?.Invoke();
+        OnHit?.Invoke(damage);
         //Debug.Log(gameObject.name + " has been hit for " + damage + " damage");
     }
 }

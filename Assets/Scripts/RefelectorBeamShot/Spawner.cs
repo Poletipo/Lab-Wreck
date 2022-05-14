@@ -39,12 +39,11 @@ public class Spawner : MonoBehaviour {
         Player = GameManager.Instance.Player.transform;
         spawnBounds = GetComponent<BoxCollider>().bounds;
         path = new NavMeshPath();
+        possibleSpawningPoints = new List<SpawnPointValue>();
     }
 
     private void SpawnObject()
     {
-
-        possibleSpawningPoints = new List<SpawnPointValue>();
 
         possibleSpawningPoints.Clear();
 
@@ -105,8 +104,6 @@ public class Spawner : MonoBehaviour {
         GameObject cat = PoolManager.GetPoolObject(SpawnedObject);
         int catHp = HealthStart + Mathf.FloorToInt(_currentGameTime / HealthTimeMuliplier) * HealthAddition;
         cat.GetComponent<ZombieEnemy>().Setup(spawnPosition, Quaternion.identity, catHp);
-
-
 
     }
 

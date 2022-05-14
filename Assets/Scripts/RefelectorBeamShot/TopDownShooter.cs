@@ -25,8 +25,13 @@ public class TopDownShooter : MonoBehaviour {
         }
     }
 
+    public GameObject AimFocus;
+    public GameObject MoveFocus;
+
 
     public Transform Wheels;
+
+    public Laser CanonLaser;
 
     private Vector3 _controllerDir;
     private Vector3 _moveDirection;
@@ -55,6 +60,10 @@ public class TopDownShooter : MonoBehaviour {
 
 
 
+    // TEST 
+    public CameraShake _cameraShake;
+
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -74,6 +83,7 @@ public class TopDownShooter : MonoBehaviour {
             Move();
             Look();
             Shoot();
+            CheckLaser();
 
 
             healthIntervalTimer += Time.deltaTime;
@@ -87,6 +97,26 @@ public class TopDownShooter : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.R)) {
                 SceneManager.LoadScene(0);
             }
+        }
+
+    }
+
+    private void CheckLaser()
+    {
+        if (Input.GetKeyDown(KeyCode.F)) {
+            if (CanonLaser.LaserOn) {
+                CanonLaser.TurnOff();
+            }
+            else {
+                CanonLaser.TurnOn();
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.P)) {
+            _cameraShake.AddTrauma(0.5f);
+        }
+        if (Input.GetKey(KeyCode.O)) {
+            _cameraShake.AddTrauma(1f);
         }
 
     }
@@ -115,6 +145,7 @@ public class TopDownShooter : MonoBehaviour {
             Wheels.rotation = Quaternion.LookRotation(_moveDirection, Vector3.up);
         }
 
+        MoveFocus.transform.position = transform.position + _moveDirection * 3f;
     }
 
     private void Look()
@@ -131,6 +162,9 @@ public class TopDownShooter : MonoBehaviour {
 
         if (isController && _controllerDir.magnitude > 0) {
             Vector3 mousePosition = _controllerDir;
+
+            AimFocus.transform.position = transform.position + _controllerDir.normalized * _controllerDir.magnitude;
+
             float lookAtAngle = Mathf.Atan2(mousePosition.y, mousePosition.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(lookAtAngle - 90, Vector3.up);
         }
@@ -142,6 +176,9 @@ public class TopDownShooter : MonoBehaviour {
                 worldMousePosition = ray.GetPoint(distance);
 
                 Vector3 mousePosition = worldMousePosition - transform.position;
+
+                AimFocus.transform.position = transform.position + mousePosition.normalized * Mathf.Clamp01(Vector3.Distance(transform.position, worldMousePosition)) * 3f;
+
                 float lookAtAngle = Mathf.Atan2(mousePosition.z, mousePosition.x) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.AngleAxis(lookAtAngle - 90, Vector3.down);
             }
