@@ -25,9 +25,17 @@ public class GameUI : MonoBehaviour {
     [Header("Shop")]
     public GameObject GameOverOrigin;
 
+    [Header("Audio")]
+    public Sprite AudioOn;
+    public Sprite AudioOff;
+    public Image AudioImageBtn;
+    private bool isMuted = false;
+
     [Header("Timer")]
     public TextMeshProUGUI TimerValue;
 
+    [Header("GameOver")]
+    public TextMeshProUGUI FinalTimerValue;
 
     private GameObject _player;
     private Health playerHealth;
@@ -49,6 +57,9 @@ public class GameUI : MonoBehaviour {
     private void OnDeath()
     {
         GameOverOrigin.SetActive(true);
+
+        FinalTimerValue.text = TimerValue.text;
+
     }
 
     private void OnMoneyChanged()
@@ -98,6 +109,23 @@ public class GameUI : MonoBehaviour {
         TimerValue.text = minutes.ToString("00") + ":" + seconds.ToString("00");
 
     }
+
+    public void ChangeMuteState()
+    {
+        if (!isMuted) {
+            AudioListener.volume = 0;
+            isMuted = true;
+            AudioImageBtn.sprite = AudioOff;
+        }
+        else {
+            AudioListener.volume = 1;
+            isMuted = false;
+            AudioImageBtn.sprite = AudioOn;
+        }
+    }
+
+
+
 
     // Update is called once per frame
     void Update()

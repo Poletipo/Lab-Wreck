@@ -10,6 +10,8 @@ public class CameraFollow : MonoBehaviour {
     [Range(0, 1)]
     public float smoothSpeed = 0.1f;
 
+    public float RefreshTime = 0.02f;
+    private float _refreshTimer = 99f;
 
     private CameraShake _cameraShake;
     // Position
@@ -36,21 +38,23 @@ public class CameraFollow : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void LateUpdate()
+    void FixedUpdate()
     {
+
         Vector3 focusTarget = Vector3.zero;
 
         for (int i = 0; i < targetFocus.Length; i++) {
 
-            focusTarget += targetFocus[i].position * targetFocus[i].priority;
+            focusTarget += (targetFocus[i].position - TargetOffset.position) * targetFocus[i].priority;
         }
 
         focusTarget /= targetFocus.Length;
+
+        focusTarget += TargetOffset.position;
+
         _desiredPosition = focusTarget + offset;
 
         _smoothPosition = (_smoothPosition * (1 - smoothSpeed)) + (_desiredPosition * smoothSpeed);
-
-
 
         _finalPosition = _smoothPosition + _cameraShake.GetPositionOffset();
 
@@ -59,11 +63,7 @@ public class CameraFollow : MonoBehaviour {
         //Assign
         transform.position = _finalPosition;
         transform.rotation = Quaternion.Euler(_finalRotation);
-    }
 
-    public Vector3 GetFollowCamera()
-    {
-        return TargetOffset.position + offset;
     }
 
 

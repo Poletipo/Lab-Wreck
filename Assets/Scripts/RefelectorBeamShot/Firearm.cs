@@ -87,12 +87,12 @@ public class Firearm : MonoBehaviour {
         for (int i = 0; i < nbBulletPerShot; i++) {
             float angleOffset = Random.Range(-maxAngleOffset, maxAngleOffset);
             Quaternion bulletAngle = muzzlePos.rotation * Quaternion.Euler(0, angleOffset, 0);
-            GameObject projectile = PoolManager.GetPoolObject(bullet); //Instantiate(bullet, muzzlePos.position, Quaternion.identity
+            GameObject projectile = PoolManager.GetPoolObject(bullet);
 
 
             Vector3 bulletDirection = bulletAngle * Vector3.forward;
 
-            projectile.GetComponent<ReflectorBullet>().Setup(muzzlePos.position, bulletDirection, ReboundCount);
+            StartCoroutine(projectile.GetComponent<ReflectorBullet>().Setup(muzzlePos.position, bulletDirection, ReboundCount));
             MuzzleFlash.Play();
             GameManager.Instance.CameraObject.GetComponent<CameraShake>().SetHigherTrauma(0.3f);
         }

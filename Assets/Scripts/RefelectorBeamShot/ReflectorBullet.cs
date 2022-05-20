@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -38,7 +39,7 @@ public class ReflectorBullet : MonoBehaviour {
     private RaycastHit hitInfo;
     private int currentRebound = 0;
 
-    public void Setup(Vector3 position, Vector3 direction, int reboundCount)
+    public IEnumerator Setup(Vector3 position, Vector3 direction, int reboundCount)
     {
         _bulletDamage = BaseBulletDamage;
         transform.position = position;
@@ -47,6 +48,8 @@ public class ReflectorBullet : MonoBehaviour {
         _direction = direction;
         previousPosition = position;
         gameObject.SetActive(true);
+        yield return new WaitForEndOfFrame();
+        GetComponent<TrailRenderer>().time = 0.1f;
     }
 
     // Start is called before the first frame update
@@ -137,8 +140,8 @@ public class ReflectorBullet : MonoBehaviour {
 
     private void EndBullet()
     {
+        GetComponent<TrailRenderer>().time = 0;
         gameObject.SetActive(false);
-        //Destroy(gameObject);
     }
 
 }

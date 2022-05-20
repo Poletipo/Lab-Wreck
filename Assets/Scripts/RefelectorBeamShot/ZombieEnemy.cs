@@ -52,6 +52,8 @@ public class ZombieEnemy : MonoBehaviour {
 
         transform.position = position;
         transform.rotation = rotation;
+        StopStun();
+
         gameObject.SetActive(true);
     }
 
@@ -66,8 +68,7 @@ public class ZombieEnemy : MonoBehaviour {
         GameObject coin = PoolManager.GetPoolObject(Coin);
         coin.GetComponent<Coin>().Setup(transform.position, Quaternion.identity);
 
-
-        Instantiate(BurnMark, new Vector3(transform.position.x, 0.1f, transform.position.z), Quaternion.Euler(90, 0, UnityEngine.Random.Range(0f, 360f)));
+        StencilSpawner.SpawnStencil(BurnMark, 1.5f, new Vector3(transform.position.x, 0.1f, transform.position.z), Quaternion.Euler(90, 0, UnityEngine.Random.Range(0f, 360f)));
         GameObject explosion = PoolManager.GetPoolObject(Explosion);
         explosion.GetComponent<DestroyVFX>().Setup(transform.position, Quaternion.identity);
 
@@ -75,6 +76,8 @@ public class ZombieEnemy : MonoBehaviour {
         float shakeValue = (1.0f - (Vector3.Distance(transform.position, player.transform.position) / 15f));
         GameManager.Instance.CameraObject.GetComponent<CameraShake>().AddTrauma(shakeValue);
         AudioSource.PlayClipAtPoint(ExplosionSound[UnityEngine.Random.Range(0, ExplosionSound.Length)], transform.position, 1f);
+        StopStun();
+
         gameObject.SetActive(false);
     }
 
@@ -97,9 +100,7 @@ public class ZombieEnemy : MonoBehaviour {
         if (_isStunned) {
             _stunnedTimer += Time.deltaTime;
             if (_stunnedTimer >= 0.5f) {
-                agent.isStopped = false;
-                _isStunned = false;
-                StunnedStar.SetActive(false);
+                StopStun();
             }
         }
     }
@@ -111,12 +112,25 @@ public class ZombieEnemy : MonoBehaviour {
             return;
         }
 
+        agent.updateRotation = false;
+
         _isStunned = true;
         if (agent != null && agent.isOnNavMesh)
             agent.isStopped = true;
         StunnedStar.SetActive(true);
         _stunnedTimer = 0;
 
+    }
+
+    public void StopStun()
+    {
+        if (agent != null && agent.isOnNavMesh) {
+            agent.isStopped = false;
+        }
+        if (agent != null)
+            agent.updateRotation = true;
+        _isStunned = false;
+        StunnedStar.SetActive(false);
     }
 
 

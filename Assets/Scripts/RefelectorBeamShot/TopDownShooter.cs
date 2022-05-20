@@ -142,10 +142,10 @@ public class TopDownShooter : MonoBehaviour {
         rb.velocity = _moveDirection * Speed;
 
         if (_moveDirection.magnitude > 0) {
-            Wheels.rotation = Quaternion.LookRotation(_moveDirection, Vector3.up);
+            Wheels.rotation = Quaternion.Lerp(Wheels.rotation, Quaternion.LookRotation(_moveDirection, Vector3.up), 10 * Time.deltaTime);
         }
 
-        MoveFocus.transform.position = transform.position + _moveDirection * 3f;
+        MoveFocus.transform.position = Vector3.Lerp(MoveFocus.transform.position, (transform.position + _moveDirection * 5f), 8f * Time.deltaTime);
     }
 
     private void Look()
@@ -177,7 +177,8 @@ public class TopDownShooter : MonoBehaviour {
 
                 Vector3 mousePosition = worldMousePosition - transform.position;
 
-                AimFocus.transform.position = transform.position + mousePosition.normalized * Mathf.Clamp01(Vector3.Distance(transform.position, worldMousePosition)) * 3f;
+                AimFocus.transform.position = transform.position +
+                    new Vector3(mousePosition.x, 0, mousePosition.z).normalized * (Mathf.Clamp(Vector3.Distance(transform.position, worldMousePosition), 0, 5) / 5) * 3f;
 
                 float lookAtAngle = Mathf.Atan2(mousePosition.z, mousePosition.x) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.AngleAxis(lookAtAngle - 90, Vector3.down);
