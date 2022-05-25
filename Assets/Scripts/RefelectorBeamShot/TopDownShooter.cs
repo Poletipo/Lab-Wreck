@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class TopDownShooter : MonoBehaviour {
@@ -27,11 +28,13 @@ public class TopDownShooter : MonoBehaviour {
 
     public GameObject AimFocus;
     public GameObject MoveFocus;
-
+    public bool isMobile = true;
 
     public Transform Wheels;
 
     public Laser CanonLaser;
+    public MobileJoystick joystick;
+    public MobileJoystick AimJoystick;
 
     private Vector3 _controllerDir;
     private Vector3 _moveDirection;
@@ -123,21 +126,44 @@ public class TopDownShooter : MonoBehaviour {
 
     private void Shoot()
     {
-        if (Input.GetButtonDown("Fire1")) {
-            _firearm.ActivatePrincipalAction();
-        }
+        if (isMobile) {
 
-        if (Input.GetButtonUp("Fire1")) {
-            _firearm.DeactivatePrincipalAction();
+            if (AimJoystick.JoystickInUse) {
+                _firearm.ActivatePrincipalAction();
+            }
+            else {
+                _firearm.DeactivatePrincipalAction();
+            }
+        }
+        else {
+
+            if (Input.GetButtonDown("Fire1")) {
+                if (!EventSystem.current.IsPointerOverGameObject()) {
+                    _firearm.ActivatePrincipalAction();
+                }
+            }
+            if (Input.GetButtonUp("Fire1")) {
+                _firearm.DeactivatePrincipalAction();
+            }
         }
     }
 
     private void Move()
     {
 
-        _moveDirection.x = Input.GetAxisRaw("Horizontal");
-        _moveDirection.z = Input.GetAxisRaw("Vertical");
-        _moveDirection.Normalize();
+        if (SystemInfo.deviceType == DeviceType.Handheld || isMobile) {
+            Vector3 dir = joystick.GetDirection();
+
+            _moveDirection.x = dir.x;
+            _moveDirection.z = dir.y;
+        }
+        else {
+
+            _moveDirection.x = Input.GetAxisRaw("Horizontal");
+            _moveDirection.z = Input.GetAxisRaw("Vertical");
+            _moveDirection.Normalize();
+        }
+
 
         rb.velocity = _moveDirection * Speed;
 
@@ -150,38 +176,54 @@ public class TopDownShooter : MonoBehaviour {
 
     private void Look()
     {
-        _controllerDir.x = -Input.GetAxisRaw("RightStickX");
-        _controllerDir.y = Input.GetAxisRaw("RightStickY");
+        if (isMobile) {
 
-        if (_controllerDir.magnitude > 0) {
-            isController = true;
-        }
-        else if (Input.GetAxisRaw("Mouse X") > 0 || Input.GetAxisRaw("Mouse Y") > 0) {
-            isController = false;
-        }
+            Vector3 mousePosition = AimJoystick.GetDirection();
 
-        if (isController && _controllerDir.magnitude > 0) {
-            Vector3 mousePosition = _controllerDir;
+
+            float lookAtAngle = Mathf.Atan2(mousePosition.y, -mousePosition.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.AngleAxis(lookAtAngle - 90, Vector3.up);
+
+            AimFocus.transform.position = transform.position + new Vector3(mousePosition.x, 0, mousePosition.y).normalized;
+
+
+        }
+        else {
+
+            _controllerDir.x = -Input.GetAxisRaw("RightStickX");
+            _controllerDir.y = Input.GetAxisRaw("RightStickY");
+
+            if (_controllerDir.magnitude > 0) {
+                isController = true;
+            }
+            else if (Input.GetAxisRaw("Mouse X") > 0 || Input.GetAxisRaw("Mouse Y") > 0) {
+                isController = false;
+            }
 
             AimFocus.transform.position = transform.position + _controllerDir.normalized * _controllerDir.magnitude;
 
-            float lookAtAngle = Mathf.Atan2(mousePosition.y, mousePosition.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.AngleAxis(lookAtAngle - 90, Vector3.up);
-        }
-        else if (!isController) {
-            Vector3 worldMousePosition;
-            float distance;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (_plane.Raycast(ray, out distance)) {
-                worldMousePosition = ray.GetPoint(distance);
+            if (isController && _controllerDir.magnitude > 0) {
+                Vector3 mousePosition = _controllerDir;
 
-                Vector3 mousePosition = worldMousePosition - transform.position;
 
-                AimFocus.transform.position = transform.position +
-                    new Vector3(mousePosition.x, 0, mousePosition.z).normalized * (Mathf.Clamp(Vector3.Distance(transform.position, worldMousePosition), 0, 5) / 5) * 3f;
+                float lookAtAngle = Mathf.Atan2(mousePosition.y, mousePosition.x) * Mathf.Rad2Deg;
+                transform.rotation = Quaternion.AngleAxis(lookAtAngle - 90, Vector3.up);
+            }
+            else if (!isController) {
+                Vector3 worldMousePosition;
+                float distance;
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                if (_plane.Raycast(ray, out distance)) {
+                    worldMousePosition = ray.GetPoint(distance);
 
-                float lookAtAngle = Mathf.Atan2(mousePosition.z, mousePosition.x) * Mathf.Rad2Deg;
-                transform.rotation = Quaternion.AngleAxis(lookAtAngle - 90, Vector3.down);
+                    Vector3 mousePosition = worldMousePosition - transform.position;
+
+                    AimFocus.transform.position = transform.position +
+                        new Vector3(mousePosition.x, 0, mousePosition.z).normalized * (Mathf.Clamp(Vector3.Distance(transform.position, worldMousePosition), 0, 5) / 5) * 3f;
+
+                    float lookAtAngle = Mathf.Atan2(mousePosition.z, mousePosition.x) * Mathf.Rad2Deg;
+                    transform.rotation = Quaternion.AngleAxis(lookAtAngle - 90, Vector3.down);
+                }
             }
         }
     }

@@ -20,6 +20,7 @@ public class Spawner : MonoBehaviour {
     private float _intervalSpawnTimer = 0;
     public Camera cam;
     public int ValidSpawnPointCount = 3;
+    public bool isSpawning = true;
 
     [Header("Cats Parameters")]
     public AnimationCurve SpawnRateCurve;
@@ -37,9 +38,15 @@ public class Spawner : MonoBehaviour {
     void Start()
     {
         Player = GameManager.Instance.Player.transform;
+        Player.GetComponent<Health>().OnDeath += OnPlayerDeath;
         spawnBounds = GetComponent<BoxCollider>().bounds;
         path = new NavMeshPath();
         possibleSpawningPoints = new List<SpawnPointValue>();
+    }
+
+    private void OnPlayerDeath()
+    {
+        isSpawning = false;
     }
 
     private void SpawnObject()
@@ -118,9 +125,12 @@ public class Spawner : MonoBehaviour {
 
         _intervalSpawnTimer += Time.deltaTime;
         if (_intervalSpawnTimer >= IntervalSpawnTime) {
-            SpawnObject();
 
-            _intervalSpawnTimer = 0;
+            if (isSpawning) {
+                SpawnObject();
+                _intervalSpawnTimer = 0;
+            }
+
         }
 
 

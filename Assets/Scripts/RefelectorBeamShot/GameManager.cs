@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour {
     public GameObject CameraObject { get; private set; }
     public AudioSource AudioManager { get; private set; }
     public GameUI GameUI { get; private set; }
+    public PauseUI PauseUI { get; private set; }
 
     private void Initialize()
     {
@@ -43,6 +44,7 @@ public class GameManager : MonoBehaviour {
     {
         Player = GameObject.FindGameObjectWithTag("Player");
         GameUI = GameObject.FindGameObjectWithTag("GameUI").GetComponent<GameUI>();
+        PauseUI = GameObject.Find("PauseUI").GetComponent<PauseUI>();
         AudioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioSource>();
         CameraObject = Camera.main.gameObject;
     }

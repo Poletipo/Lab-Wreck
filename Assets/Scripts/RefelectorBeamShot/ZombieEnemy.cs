@@ -28,20 +28,24 @@ public class ZombieEnemy : MonoBehaviour {
     private bool _isStunned = false;
     private float _stunnedTimer = 1;
 
-
-
-
     // Start is called before the first frame update
     void Start()
     {
         player = GameManager.Instance.Player;
         playerHealth = player.GetComponent<Health>();
+        playerHealth.OnDeath += OnPlayerDeath;
+
         agent = GetComponent<NavMeshAgent>();
         health = GetComponent<Health>();
         health.OnHurt += OnHurt;
         health.OnDeath += OnDeath;
 
         hitable = GetComponent<Hitable>();
+    }
+
+    private void OnPlayerDeath()
+    {
+        //agent.isStopped = true;
     }
 
     public void Setup(Vector3 position, Quaternion rotation, int hp)

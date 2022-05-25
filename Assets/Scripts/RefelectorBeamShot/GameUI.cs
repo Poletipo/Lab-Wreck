@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameUI : MonoBehaviour {
@@ -102,12 +103,10 @@ public class GameUI : MonoBehaviour {
 
     public void UpdateTimer(float time)
     {
-
         int seconds = Mathf.FloorToInt(time) % 60;
         int minutes = Mathf.FloorToInt(time) / 60;
 
         TimerValue.text = minutes.ToString("00") + ":" + seconds.ToString("00");
-
     }
 
     public void ChangeMuteState()
@@ -124,8 +123,15 @@ public class GameUI : MonoBehaviour {
         }
     }
 
+    public void OpenPauseMenu()
+    {
+        GameManager.Instance.PauseUI.OpenPauseMenu();
+    }
 
-
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(0);
+    }
 
     // Update is called once per frame
     void Update()
