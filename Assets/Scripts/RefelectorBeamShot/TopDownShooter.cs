@@ -181,9 +181,12 @@ public class TopDownShooter : MonoBehaviour {
             Vector3 mousePosition = AimJoystick.GetDirection();
 
 
-            float lookAtAngle = Mathf.Atan2(mousePosition.y, -mousePosition.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.AngleAxis(lookAtAngle - 90, Vector3.up);
+            if (mousePosition.magnitude > 0) {
 
+                float lookAtAngle = Mathf.Atan2(mousePosition.y, -mousePosition.x) * Mathf.Rad2Deg;
+                transform.rotation = Quaternion.AngleAxis(lookAtAngle - 90, Vector3.up);
+
+            }
             AimFocus.transform.position = transform.position + new Vector3(mousePosition.x, 0, mousePosition.y).normalized;
 
 

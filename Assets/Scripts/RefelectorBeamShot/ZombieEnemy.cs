@@ -116,11 +116,11 @@ public class ZombieEnemy : MonoBehaviour {
             return;
         }
 
-        agent.updateRotation = false;
-
         _isStunned = true;
-        if (agent != null && agent.isOnNavMesh)
+        if (agent != null && agent.isOnNavMesh) {
+            agent.updateRotation = false;
             agent.isStopped = true;
+        }
         StunnedStar.SetActive(true);
         _stunnedTimer = 0;
 

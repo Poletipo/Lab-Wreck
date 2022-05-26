@@ -69,7 +69,7 @@ public class MobileJoystick : MonoBehaviour {
     {
         stick.position = Input.touches[JoystickTouchId].position;
 
-        direction = (stick.position - JoystickZone.position).normalized;
+        direction = Vector3.ClampMagnitude((stick.position - JoystickZone.position) / (JoystickZone.sizeDelta.x / 2), 1f);
     }
 
     private void ResetJoystick()

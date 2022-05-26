@@ -25,6 +25,7 @@ public class GameUI : MonoBehaviour {
 
     [Header("Shop")]
     public GameObject GameOverOrigin;
+    private Shop currentShop;
 
     [Header("Audio")]
     public Sprite AudioOn;
@@ -78,18 +79,26 @@ public class GameUI : MonoBehaviour {
         _healthSlider.color = HealthColor.Evaluate(sliderValue);
     }
 
-    public void ShowShopPrompt(string prompt, int cost, Color color)
+    public void ShowShopPrompt(string prompt, int cost, Color color, Shop currentShop)
     {
         ShopCostValue.text = cost.ToString();
         ShopPrompt.text = prompt;
         ShopPrompt.color = color;
+        this.currentShop = currentShop;
         ShopOrigin.SetActive(true);
     }
 
     public void HideShopPrompt()
     {
+        currentShop = null;
         ShopOrigin.SetActive(false);
     }
+
+    public void TryShop()
+    {
+        currentShop.TryShopping();
+    }
+
 
     public void HideUI()
     {
