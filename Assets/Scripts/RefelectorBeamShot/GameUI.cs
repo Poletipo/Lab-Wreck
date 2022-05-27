@@ -36,10 +36,15 @@ public class GameUI : MonoBehaviour {
     [Header("Timer")]
     public TextMeshProUGUI TimerValue;
 
+    [Header("Joystick")]
+    public GameObject MoveJoystick;
+    public GameObject AimJoystick;
+
     [Header("GameOver")]
     public TextMeshProUGUI FinalTimerValue;
 
     private GameObject _player;
+    private bool playerIsDead = false;
     private Health playerHealth;
     private TopDownShooter playerTopDownShooter;
 
@@ -58,10 +63,11 @@ public class GameUI : MonoBehaviour {
 
     private void OnDeath()
     {
+        MoveJoystick.SetActive(false);
+        AimJoystick.SetActive(false);
         GameOverOrigin.SetActive(true);
-
         FinalTimerValue.text = TimerValue.text;
-
+        playerIsDead = true;
     }
 
     private void OnMoneyChanged()
@@ -103,11 +109,20 @@ public class GameUI : MonoBehaviour {
     public void HideUI()
     {
         GetComponent<CanvasGroup>().alpha = 0;
+        GetComponent<CanvasGroup>().blocksRaycasts = false;
+        MoveJoystick.SetActive(false);
+        AimJoystick.SetActive(false);
     }
 
     public void ShowUI()
     {
         GetComponent<CanvasGroup>().alpha = 1;
+        GetComponent<CanvasGroup>().blocksRaycasts = true;
+
+        if (!playerIsDead) {
+            MoveJoystick.SetActive(true);
+            AimJoystick.SetActive(true);
+        }
     }
 
     public void UpdateTimer(float time)

@@ -118,8 +118,9 @@ public class Spawner : MonoBehaviour {
     void Update()
     {
         _currentGameTime += Time.deltaTime;
-
-        GameManager.Instance.GameUI.UpdateTimer(_currentGameTime);
+        if (isSpawning) {
+            GameManager.Instance.GameUI.UpdateTimer(_currentGameTime);
+        }
 
         IntervalSpawnTime = SpawnRateCurve.Evaluate(_currentGameTime / EstimateTimeGame);
 
