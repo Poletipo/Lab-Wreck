@@ -97,6 +97,7 @@ public class TopDownShooter : MonoBehaviour {
             }
         }
         else {
+            _firearm.DeactivatePrincipalAction();
             if (Input.GetKeyDown(KeyCode.R)) {
                 SceneManager.LoadScene(0);
             }
@@ -114,36 +115,30 @@ public class TopDownShooter : MonoBehaviour {
                 CanonLaser.TurnOn();
             }
         }
-
-        if (Input.GetKeyDown(KeyCode.P)) {
-            _cameraShake.AddTrauma(0.5f);
-        }
-        if (Input.GetKey(KeyCode.O)) {
-            _cameraShake.AddTrauma(1f);
-        }
-
     }
 
     private void Shoot()
     {
-        if (isMobile) {
+        if (!IsDead) {
+            if (isMobile) {
 
-            if (AimJoystick.JoystickInUse) {
-                _firearm.ActivatePrincipalAction();
-            }
-            else {
-                _firearm.DeactivatePrincipalAction();
-            }
-        }
-        else {
-
-            if (Input.GetButtonDown("Fire1")) {
-                if (!EventSystem.current.IsPointerOverGameObject()) {
+                if (AimJoystick.JoystickInUse) {
                     _firearm.ActivatePrincipalAction();
                 }
+                else {
+                    _firearm.DeactivatePrincipalAction();
+                }
             }
-            if (Input.GetButtonUp("Fire1")) {
-                _firearm.DeactivatePrincipalAction();
+            else {
+
+                if (Input.GetButtonDown("Fire1")) {
+                    if (!EventSystem.current.IsPointerOverGameObject()) {
+                        _firearm.ActivatePrincipalAction();
+                    }
+                }
+                if (Input.GetButtonUp("Fire1")) {
+                    _firearm.DeactivatePrincipalAction();
+                }
             }
         }
     }

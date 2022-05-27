@@ -31,7 +31,6 @@ public class GameManager : MonoBehaviour {
     private void Initialize()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
-
         OnSceneLoaded();
     }
 

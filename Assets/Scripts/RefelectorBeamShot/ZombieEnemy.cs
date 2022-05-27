@@ -16,6 +16,7 @@ public class ZombieEnemy : MonoBehaviour {
     public AudioClip[] punchSound;
     public AudioClip[] ExplosionSound;
     public GameObject StunnedStar;
+    public ParticleSystem Hearts;
 
     public GameObject Coin;
     public GameObject Explosion;
@@ -96,10 +97,21 @@ public class ZombieEnemy : MonoBehaviour {
         float distance = Vector3.Distance(transform.position, player.transform.position);
 
         if (distance < MinHurtDistance && hitIntervalTimer >= hitInterval && !_isStunned) {
+
+
+
             playerHealth.Hurt((int)(MinHurtDistance / distance));
 
             hitIntervalTimer = 0;
         }
+
+        if (distance < MinHurtDistance && !_isStunned && !Hearts.isPlaying) {
+            Hearts.Play();
+        }
+        else if (distance > MinHurtDistance && Hearts.isPlaying) {
+            Hearts.Stop();
+        }
+
 
         if (_isStunned) {
             _stunnedTimer += Time.deltaTime;

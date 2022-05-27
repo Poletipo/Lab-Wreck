@@ -13,6 +13,9 @@ public class GameUI : MonoBehaviour {
     private Image _healthSlider;
     public Gradient HealthColor;
     public AnimationCurve HealthAdvancement;
+    public RectTransform HealthOrigin;
+    private Vector3 HealthOriginPosition;
+    public CameraShake HealthShake;
 
     [Header("Money")]
     [SerializeField]
@@ -59,6 +62,8 @@ public class GameUI : MonoBehaviour {
 
         playerTopDownShooter = _player.GetComponent<TopDownShooter>();
         playerTopDownShooter.OnMoneyChanged += OnMoneyChanged;
+
+        HealthOriginPosition = HealthOrigin.position;
     }
 
     private void OnDeath()
@@ -160,6 +165,15 @@ public class GameUI : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        if (_healthSlider.fillAmount > 0.5f) {
+
+
+            float trauma = (_healthSlider.fillAmount - 0.5f) * 2.5f;
+
+            HealthShake.SetTrauma(trauma);
+            HealthOrigin.position = HealthOriginPosition + HealthShake.GetPositionOffset();
+        }
+
 
     }
 }
