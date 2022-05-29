@@ -159,7 +159,9 @@ public class GameUI : MonoBehaviour {
 
     public void RestartLevel()
     {
+        GoogleAd.DestroyBanner();
         SceneManager.LoadScene(0);
+
     }
 
     // Update is called once per frame

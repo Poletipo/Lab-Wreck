@@ -36,7 +36,7 @@ public class PauseUI : MonoBehaviour {
         PauseMenuOrigin.SetActive(true);
         _pauseMenuOpen = true;
         Time.timeScale = 0;
-        _player.IsDead = true;
+        _player.InputEnabled = false;
         _gameUI.HideUI();
     }
 
@@ -45,7 +45,7 @@ public class PauseUI : MonoBehaviour {
         PauseMenuOrigin.SetActive(false);
         _pauseMenuOpen = false;
         Time.timeScale = 1;
-        _player.IsDead = false;
+        _player.InputEnabled = true;
         _gameUI.ShowUI();
     }
 

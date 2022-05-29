@@ -26,6 +26,8 @@ public class TopDownShooter : MonoBehaviour {
         }
     }
 
+    public bool InputEnabled = true;
+
     public GameObject AimFocus;
     public GameObject MoveFocus;
     public bool isMobile = true;
@@ -82,7 +84,7 @@ public class TopDownShooter : MonoBehaviour {
 
     void Update()
     {
-        if (!IsDead) {
+        if (!IsDead && InputEnabled) {
             Move();
             Look();
             Shoot();
@@ -119,26 +121,24 @@ public class TopDownShooter : MonoBehaviour {
 
     private void Shoot()
     {
-        if (!IsDead) {
-            if (isMobile) {
+        if (isMobile) {
 
-                if (AimJoystick.JoystickInUse) {
-                    _firearm.ActivatePrincipalAction();
-                }
-                else {
-                    _firearm.DeactivatePrincipalAction();
-                }
+            if (AimJoystick.JoystickInUse) {
+                _firearm.ActivatePrincipalAction();
             }
             else {
+                _firearm.DeactivatePrincipalAction();
+            }
+        }
+        else {
 
-                if (Input.GetButtonDown("Fire1")) {
-                    if (!EventSystem.current.IsPointerOverGameObject()) {
-                        _firearm.ActivatePrincipalAction();
-                    }
+            if (Input.GetButtonDown("Fire1")) {
+                if (!EventSystem.current.IsPointerOverGameObject()) {
+                    _firearm.ActivatePrincipalAction();
                 }
-                if (Input.GetButtonUp("Fire1")) {
-                    _firearm.DeactivatePrincipalAction();
-                }
+            }
+            if (Input.GetButtonUp("Fire1")) {
+                _firearm.DeactivatePrincipalAction();
             }
         }
     }

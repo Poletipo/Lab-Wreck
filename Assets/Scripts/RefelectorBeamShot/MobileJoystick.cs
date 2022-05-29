@@ -22,6 +22,7 @@ public class MobileJoystick : MonoBehaviour {
 
     public RectTransform JoystickZone;
     public RectTransform stick;
+    private RectTransform CanvasRect;
 
     public int JoystickTouchId = -1;
     private Vector3 direction;
@@ -29,7 +30,7 @@ public class MobileJoystick : MonoBehaviour {
     // Start is called before the first frame update
     void Start()
     {
-
+        CanvasRect = GetComponent<RectTransform>();
     }
 
     // Update is called once per frame
@@ -40,7 +41,7 @@ public class MobileJoystick : MonoBehaviour {
                 if (touch.phase == TouchPhase.Began) {
                     float distance = Vector2.Distance(JoystickZone.position, touch.position);
 
-                    if (distance <= (JoystickZone.sizeDelta.x / 2)) {
+                    if (distance <= (JoystickZone.sizeDelta.x * CanvasRect.localScale.x / 2)) {
                         JoystickInUse = true;
                         JoystickTouchId = touch.fingerId;
                         break;
