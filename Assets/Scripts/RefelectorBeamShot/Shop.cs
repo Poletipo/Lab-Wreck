@@ -28,7 +28,7 @@ public abstract class Shop : MonoBehaviour {
         }
     }
 
-    public void TryShopping()
+    public bool TryShopping()
     {
 
         if (_player == null) {
@@ -45,6 +45,7 @@ public abstract class Shop : MonoBehaviour {
         else {
             GameManager.Instance.AudioManager.PlayOneShot(DenySound);
         }
+        return validPayment;
     }
 
     private void OnTriggerEnter(Collider other)

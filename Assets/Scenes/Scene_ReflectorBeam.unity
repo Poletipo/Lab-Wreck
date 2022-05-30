@@ -17955,7 +17955,6 @@ MonoBehaviour:
   - {fileID: 1996390623}
   - {fileID: 99328589}
   smoothSpeed: 0.1
-  RefreshTime: 0.02
 --- !u!114 &1404880558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21548,30 +21547,12 @@ Animation:
   m_Enabled: 1
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: a1b3b4f34b70cd04787dcb28e30d9dfe, type: 2}
-  m_Animations: []
+  m_Animations:
+  - {fileID: 7400000, guid: a1b3b4f34b70cd04787dcb28e30d9dfe, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!95 &1698474917
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698474913}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f6c043a3f4de034429479affd80520fb, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1710805873
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26682,7 +26663,7 @@ PrefabInstance:
     - target: {fileID: 7741046365085364617, guid: c1c4c4fa0ec79504da56e9c7695737c8,
         type: 3}
       propertyPath: _moneyAmount
-      value: 0
+      value: 9999
       objectReference: {fileID: 0}
     - target: {fileID: 7741046365085364618, guid: c1c4c4fa0ec79504da56e9c7695737c8,
         type: 3}

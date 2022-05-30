@@ -10,9 +10,6 @@ public class CameraFollow : MonoBehaviour {
     [Range(0, 1)]
     public float smoothSpeed = 0.1f;
 
-    public float RefreshTime = 0.02f;
-    private float _refreshTimer = 99f;
-
     private CameraShake _cameraShake;
     // Position
     private Vector3 offset;

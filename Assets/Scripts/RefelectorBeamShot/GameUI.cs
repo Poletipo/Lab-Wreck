@@ -22,6 +22,7 @@ public class GameUI : MonoBehaviour {
     private TextMeshProUGUI _moneyValue;
 
     [Header("Shop")]
+    public Animation ShopBtnAnimation;
     public GameObject ShopOrigin;
     public TextMeshProUGUI ShopPrompt;
     public TextMeshProUGUI ShopCostValue;
@@ -107,7 +108,15 @@ public class GameUI : MonoBehaviour {
 
     public void TryShop()
     {
-        currentShop.TryShopping();
+        bool validPayment = currentShop.TryShopping();
+
+        if (validPayment) {
+            ShopBtnAnimation.Play("BtnGranted");
+        }
+        else {
+            ShopBtnAnimation.Play("BtnDenied");
+        }
+
     }
 
 
