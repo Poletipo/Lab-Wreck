@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -35,6 +36,8 @@ public class TopDownShooter : MonoBehaviour {
     public Transform Wheels;
 
     public Laser CanonLaser;
+    public GameObject Explosion;
+    public ParticleSystem Smoke;
     public MobileJoystick joystick;
     public MobileJoystick AimJoystick;
 
@@ -46,9 +49,9 @@ public class TopDownShooter : MonoBehaviour {
     private Rigidbody rb;
     private Health health;
 
+    private bool _isSmoking = false;
+
     private Firearm _firearm;
-
-
     public Action OnMoneyChanged;
 
     [Header("Money")]
@@ -63,8 +66,6 @@ public class TopDownShooter : MonoBehaviour {
         }
     }
 
-
-
     // TEST 
     public CameraShake _cameraShake;
 
@@ -75,11 +76,41 @@ public class TopDownShooter : MonoBehaviour {
         health = GetComponent<Health>();
         _firearm = GetComponent<Firearm>();
         health.OnDeath += OnDeath;
+        health.OnHpChanged += OnHpChanged;
     }
 
-    private void OnDeath()
+    private void OnHpChanged()
+    {
+        float hpPercent = 1 - (float)health.Hp / health.MaxHp;
+
+        if (hpPercent >= 0.54f && !_isSmoking) {
+            _isSmoking = true;
+            Smoke.Play();
+        }
+        else if (hpPercent < 0.54f && _isSmoking) {
+            Smoke.Stop();
+            _isSmoking = false;
+        }
+
+    }
+
+    private async void OnDeath()
     {
         IsDead = true;
+        rb.constraints = RigidbodyConstraints.FreezeAll;
+        CanonLaser.TurnOff();
+        AimFocus.transform.position = transform.position;
+        MoveFocus.transform.position = transform.position;
+
+        GetComponent<Animation>().Play();
+
+        float end = Time.time + 1;
+
+        while (Time.time < end) {
+            await Task.Yield();
+        }
+        Instantiate(Explosion, transform.position, Quaternion.identity);
+        GameManager.Instance.CameraObject.GetComponent<CameraShake>().AddTrauma(1);
     }
 
     void Update()
@@ -100,7 +131,7 @@ public class TopDownShooter : MonoBehaviour {
         }
         else {
             _firearm.DeactivatePrincipalAction();
-            if (Input.GetKeyDown(KeyCode.R)) {
+            if (Input.GetKeyDown(KeyCode.R) && IsDead) {
                 SceneManager.LoadScene(0);
             }
         }

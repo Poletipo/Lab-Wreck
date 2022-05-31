@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -67,13 +68,22 @@ public class GameUI : MonoBehaviour {
         HealthOriginPosition = HealthOrigin.position;
     }
 
-    private void OnDeath()
+    private async void OnDeath()
     {
+
+        float end = Time.time + 2f;
+
+        playerIsDead = true;
+
+        while (Time.time < end) {
+            await Task.Yield();
+        }
+
         MoveJoystick.SetActive(false);
         AimJoystick.SetActive(false);
-        GameOverOrigin.SetActive(true);
         FinalTimerValue.text = TimerValue.text;
-        playerIsDead = true;
+
+        GameOverOrigin.SetActive(true);
     }
 
     private void OnMoneyChanged()
@@ -177,14 +187,10 @@ public class GameUI : MonoBehaviour {
     void Update()
     {
         if (_healthSlider.fillAmount > 0.5f) {
-
-
             float trauma = (_healthSlider.fillAmount - 0.5f) * 2.5f;
 
             HealthShake.SetTrauma(trauma);
             HealthOrigin.position = HealthOriginPosition + HealthShake.GetPositionOffset();
         }
-
-
     }
 }
