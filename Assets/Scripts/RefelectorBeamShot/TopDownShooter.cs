@@ -141,6 +141,7 @@ public class TopDownShooter : MonoBehaviour {
     private void CheckLaser()
     {
         if (Input.GetKeyDown(KeyCode.F)) {
+
             if (CanonLaser.LaserOn) {
                 CanonLaser.TurnOff();
             }

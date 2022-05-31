@@ -47,6 +47,10 @@ public class GameUI : MonoBehaviour {
 
     [Header("GameOver")]
     public TextMeshProUGUI FinalTimerValue;
+    public GameObject NewRecordTxt;
+    public TextMeshProUGUI PreviousTimerTxt;
+    public TextMeshProUGUI PreviousTimerValue;
+    private float timer = 0;
 
     private GameObject _player;
     private bool playerIsDead = false;
@@ -84,6 +88,26 @@ public class GameUI : MonoBehaviour {
         FinalTimerValue.text = TimerValue.text;
 
         GameOverOrigin.SetActive(true);
+
+        float bestTime = SaveTime.LoadTimeData();
+
+        PreviousTimerValue.text = TimeToString(bestTime);
+
+        if (bestTime < timer) {
+            // New record!
+            NewRecordTxt.SetActive(true);
+            SaveTime.SaveTimeData(timer);
+            if (bestTime == -1) {
+                // no previous record
+                PreviousTimerTxt.text = "";
+                PreviousTimerValue.text = "";
+            }
+        }
+        else {
+            //show normal time
+            NewRecordTxt.SetActive(false);
+            PreviousTimerTxt.text = "Best Time:";
+        }
     }
 
     private void OnMoneyChanged()
@@ -151,11 +175,18 @@ public class GameUI : MonoBehaviour {
 
     public void UpdateTimer(float time)
     {
+        timer = time;
+        TimerValue.text = TimeToString(time);
+    }
+
+    private string TimeToString(float time)
+    {
         int seconds = Mathf.FloorToInt(time) % 60;
         int minutes = Mathf.FloorToInt(time) / 60;
 
-        TimerValue.text = minutes.ToString("00") + ":" + seconds.ToString("00");
+        return minutes.ToString("00") + ":" + seconds.ToString("00");
     }
+
 
     public void ChangeMuteState()
     {
@@ -180,7 +211,6 @@ public class GameUI : MonoBehaviour {
     {
         GoogleAd.DestroyBanner();
         SceneManager.LoadScene(0);
-
     }
 
     // Update is called once per frame
