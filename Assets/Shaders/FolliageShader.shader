@@ -3,22 +3,22 @@ Shader "Custom/FolliageShader"
     Properties
     {
         _MainTex ("Albedo (RGB)", 2D) = "white" {}
-        _Alpha ("Alpha", Color) = (1,1,1,1)
+        _Alpha ("Alpha", Float) = 1.0
     }
     SubShader
     {
         Tags {
-        "RenderType"="Transparent"
-        "Queue"="Transparent+1000"
+        //"RenderType"="Transparent"
+        //"Queue"="Transparent+1000"
         }
-        LOD 100
-        ZWrite Off
-        Blend SrcAlpha OneMinusSrcAlpha
+
+        AlphaToMask On
+        Cull off
+        ZWrite On
+        ZTest Less
 
 
         Pass{
-            //Cull OFF
-
             CGPROGRAM
 
             #pragma vertex vert
@@ -42,14 +42,14 @@ Shader "Custom/FolliageShader"
             };
 
             sampler2D _MainTex;
-            float4 _Alpha;
+            float _Alpha;
 
             v2f vert (appdata i){
                 v2f o;
 
                 o.uv = i.uv;
                 o.vertex = UnityObjectToClipPos(i.vertex);
-                o.color = _Alpha;
+                //o.color = _Alpha;
                 return o;
             }
 
