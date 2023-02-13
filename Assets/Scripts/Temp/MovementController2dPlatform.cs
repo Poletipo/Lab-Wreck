@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovementController : MonoBehaviour {
+public class MovementController2dPlatform : MonoBehaviour {
 
     // delegate signature de fonction
-    public delegate void MovementControllerEvent(MovementController mc);
+    public delegate void MovementControllerEvent(MovementController2dPlatform mc);
 
     //Listeners
     public MovementControllerEvent OnDirectionChanged;
@@ -24,17 +24,14 @@ public class MovementController : MonoBehaviour {
 
             if (value.x != 0) {
                 Vector3 oldDir = facingDirection;
-                if (value.x > 0)
-                {
+                if (value.x > 0) {
                     facingDirection = Vector3.right;
                 }
-                else
-                {
+                else {
                     facingDirection = Vector3.left;
                 }
 
-                if(oldDir != facingDirection)
-                {
+                if (oldDir != facingDirection) {
                     OnDirectionChanged?.Invoke(this);
                 }
 
@@ -46,18 +43,16 @@ public class MovementController : MonoBehaviour {
 
     private bool _isCrouched;
 
-    public bool IsCrouched
-    {
+    public bool IsCrouched {
         get { return _isCrouched; }
-        set { 
+        set {
             _isCrouched = value;
 
             HandleCrouch();
         }
     }
 
-    private void HandleCrouch()
-    {
+    private void HandleCrouch() {
         float colliderSize = IsCrouched ? CrouchingSize : StandingSize;
 
         playerCollider.height = colliderSize;
@@ -115,16 +110,14 @@ public class MovementController : MonoBehaviour {
     public Vector3 facingDirection;
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         rb = GetComponent<Rigidbody>();
         mcCollider = GetComponent<Collider>();
         jumpVelocity = Mathf.Sqrt(-2f * Physics2D.gravity.y * JumpHeight);
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         if (_isJumping) {
             if (IsGrounded()) {
                 _isGrounded = false;
@@ -138,8 +131,7 @@ public class MovementController : MonoBehaviour {
         }
 
 
-        if (_isGrounded && _isInAir)
-        {
+        if (_isGrounded && _isInAir) {
             _isInAir = false;
             OnLanding?.Invoke(this);
         }
@@ -165,13 +157,11 @@ public class MovementController : MonoBehaviour {
 
     }
 
-    private void FixedUpdate()
-    {
+    private void FixedUpdate() {
 
     }
 
-    private void UpdateJump()
-    {
+    private void UpdateJump() {
         if (_preGroundedJumpTimer > PreJumpBuffer) {
             _desiredJump = false;
         }
@@ -190,8 +180,7 @@ public class MovementController : MonoBehaviour {
         _velocity.y = Mathf.Clamp(_velocity.y, MaxFallingSpeed, 9999);
     }
 
-    private void UpdateTimers()
-    {
+    private void UpdateTimers() {
         _preGroundedJumpTimer += Time.deltaTime;
         _isJumpingTimer += Time.deltaTime;
 
@@ -203,8 +192,7 @@ public class MovementController : MonoBehaviour {
         }
     }
 
-    private void Jump()
-    {
+    private void Jump() {
         _velocity.y = jumpVelocity;
 
         _isJumping = true;
@@ -216,15 +204,13 @@ public class MovementController : MonoBehaviour {
         OnJumping?.Invoke(this);
     }
 
-    private bool IsGrounded()
-    {
+    private bool IsGrounded() {
         bool isGrounded = false;
 
         Vector3 playerFloor = new Vector3(mcCollider.bounds.center.x, mcCollider.bounds.center.y - mcCollider.bounds.extents.y, mcCollider.bounds.center.z);
         Vector3 groundedCollisionSize = new Vector3(mcCollider.bounds.extents.x * 2.0f * 0.9f, 0.3f, mcCollider.bounds.extents.z * 2.0f);
 
         Collider[] colliders = Physics.OverlapBox(playerFloor, groundedCollisionSize, Quaternion.identity, _layermask);
-        DebugExtension.DrawBox(playerFloor, groundedCollisionSize, Color.red, 0.0f);
 
         if (colliders.Length > 0) {
 

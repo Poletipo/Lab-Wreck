@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/TreeScene.unity
+    guid: fd18c5940213cb74e839d3896e2c5bb3
   m_configObjects: {}

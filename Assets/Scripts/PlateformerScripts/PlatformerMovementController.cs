@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class MovementController : MonoBehaviour {
+public class PlatformerMovementController : MonoBehaviour {
 
     // PUBLIC VARIABLE
     public Transform playerInputSpace = default;
@@ -11,7 +11,7 @@ public class MovementController : MonoBehaviour {
     #region MovementVariables
     [Header("Movement")]
     [Range(0, 50)]
-    [SerializeField]private float _maxSpeed = 5;
+    [SerializeField] private float _maxSpeed = 5;
     [Range(0, 50)]
     [SerializeField] private float _maxAcceleration = 1;
     [Range(0, 50)]
@@ -94,20 +94,17 @@ public class MovementController : MonoBehaviour {
     #endregion PrivateVariable
     // FUNCTIONS
 
-    private void Start()
-    {
+    private void Start() {
         Initialize();
     }
 
-    private void Update()
-    {
+    private void Update() {
         HandleDirection();
 
         HandleFalling();
     }
 
-    void FixedUpdate()
-    {
+    void FixedUpdate() {
         UpdateState();
         AdjustVelocity();
 
@@ -124,8 +121,7 @@ public class MovementController : MonoBehaviour {
 
     #region Movement
 
-    private void HandleDirection()
-    {
+    private void HandleDirection() {
         _desiredVelocity = new Vector3(MoveInput.x, 0, MoveInput.y);
 
         CurrentVelocity = (transform.position - _previousPosition) / Time.deltaTime;
@@ -145,8 +141,7 @@ public class MovementController : MonoBehaviour {
         _desiredVelocity *= _maxSpeed;
     }
 
-    void AdjustVelocity()
-    {
+    void AdjustVelocity() {
         Vector3 xAxis = ProjectOnContactPlane(Vector3.right).normalized;
         Vector3 zAxis = ProjectOnContactPlane(Vector3.forward).normalized;
 
@@ -167,8 +162,7 @@ public class MovementController : MonoBehaviour {
     #endregion Movement
 
     #region Jump
-    private void Jump()
-    {
+    private void Jump() {
         if (_isGrounded) {
             _stepsSinceLastJump = 0;
             _isGrounded = false;
@@ -183,17 +177,13 @@ public class MovementController : MonoBehaviour {
         }
     }
 
-    void HandleFalling()
-    {
-        if (!_isGrounded)
-        {
+    void HandleFalling() {
+        if (!_isGrounded) {
             //Better Jump
-            if (_rb.velocity.y < 0)
-            {
+            if (_rb.velocity.y < 0) {
                 _rb.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
             }
-            else if (_rb.velocity.y > 0 && !InputJump)
-            {
+            else if (_rb.velocity.y > 0 && !InputJump) {
                 _rb.velocity += Vector3.up * Physics.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
             }
         }
@@ -202,18 +192,15 @@ public class MovementController : MonoBehaviour {
     #endregion Jump
 
     #region OnGroundCollisionHandling
-    private void OnCollisionEnter(Collision collision)
-    {
+    private void OnCollisionEnter(Collision collision) {
         EvaluationCollision(collision);
     }
 
-    private void OnCollisionStay(Collision collision)
-    {
+    private void OnCollisionStay(Collision collision) {
         EvaluationCollision(collision);
     }
 
-    void EvaluationCollision(Collision collision)
-    {
+    void EvaluationCollision(Collision collision) {
         _isGrounded = false;
 
         for (int i = 0; i < collision.contactCount; i++) {
@@ -250,27 +237,21 @@ public class MovementController : MonoBehaviour {
         _isGrounded = _groundContactCount > 0;
     }
 
-    void OnCollisionExit()
-    {
+    void OnCollisionExit() {
         _isGrounded = false;
     }
 
-    private void UpdateGravity(bool isGrounded)
-    {
-        if (isGrounded)
-        {
+    private void UpdateGravity(bool isGrounded) {
+        if (isGrounded) {
             _rb.useGravity = false;
         }
-        else
-        {
+        else {
             _rb.useGravity = true;
         }
     }
 
-    private bool AdditionalGroundCheck(bool currentGrounded)
-    {
-        if (currentGrounded)
-        {
+    private bool AdditionalGroundCheck(bool currentGrounded) {
+        if (currentGrounded) {
             return currentGrounded;
         }
         bool isGrounded = currentGrounded;
@@ -283,8 +264,7 @@ public class MovementController : MonoBehaviour {
 
         Debug.DrawRay(transform.position, Vector3.down, Color.green);
 
-        if(Physics.Raycast(ray, out hit, _maxStepHeight, _groundMask))
-        {
+        if (Physics.Raycast(ray, out hit, _maxStepHeight, _groundMask)) {
             _groundNormal = hit.normal;
             _groundContactCount = 1;
             float speed = _velocity.magnitude;
@@ -303,40 +283,34 @@ public class MovementController : MonoBehaviour {
     #endregion OnGroundCollisionHandling
 
 
-    private void Initialize()
-    {
+    private void Initialize() {
         _previousPosition = transform.position;
         _maxDotFloorValue = Mathf.Cos(_maxFloorAngle * Mathf.Deg2Rad);
 
         _rb = GetComponent<Rigidbody>();
     }
-    private void UpdateState()
-    {
+    private void UpdateState() {
         _stepsSinceLastGrounded += 1;
         _stepsSinceLastJump += 1;
         _velocity = _rb.velocity;
 
 
-        if (_isGrounded || SnapToGround())
-        {
+        if (_isGrounded || SnapToGround()) {
             _stepsSinceLastGrounded = 0;
         }
-        else
-        {
+        else {
             _groundNormal = Vector3.up;
         }
         UpdateGravity(_isGrounded);
     }
-    private void ClearState()
-    {
+    private void ClearState() {
         _steepNormal = _groundNormal = Vector3.zero;
         _steepContactCount = _groundContactCount = 0;
     }
 
-    
 
-    private void TestingDebug()
-    {
+
+    private void TestingDebug() {
         Debug.DrawRay(transform.position, _velocity.normalized * 2, Color.red);
         Debug.DrawRay(transform.position, _groundNormal * 2, Color.blue);
         _renderer.material.SetColor(
@@ -344,21 +318,18 @@ public class MovementController : MonoBehaviour {
         );
     }
 
-    bool SnapToGround()
-    {
-        if(_stepsSinceLastGrounded > 1 || _stepsSinceLastJump <=2) // to only snap directly after leaving ground
+    bool SnapToGround() {
+        if (_stepsSinceLastGrounded > 1 || _stepsSinceLastJump <= 2) // to only snap directly after leaving ground
         {
             return false;
         }
 
 
-        if (!Physics.Raycast(_rb.position,Vector3.down, out RaycastHit hit, _maxStepHeight, _groundMask))
-        {
+        if (!Physics.Raycast(_rb.position, Vector3.down, out RaycastHit hit, _maxStepHeight, _groundMask)) {
             return false;
         }
 
-        if(hit.normal.y < _maxDotFloorValue)
-        {
+        if (hit.normal.y < _maxDotFloorValue) {
             return false;
         }
 
@@ -366,15 +337,13 @@ public class MovementController : MonoBehaviour {
         _groundNormal = hit.normal;
         float speed = _velocity.magnitude;
         float dot = Vector3.Dot(_velocity, hit.normal);
-        if(dot > 0)
-        {
+        if (dot > 0) {
             _velocity = (_velocity - hit.normal * dot).normalized * speed;
         }
         return true;
     }
 
-    Vector3 ProjectOnContactPlane(Vector3 vector)
-    {
+    Vector3 ProjectOnContactPlane(Vector3 vector) {
         return vector - _groundNormal * Vector3.Dot(vector, _groundNormal);
     }
 }

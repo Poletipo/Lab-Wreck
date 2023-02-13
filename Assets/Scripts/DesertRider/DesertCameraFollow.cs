@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraFollow : MonoBehaviour {
+public class DesertCameraFollow : MonoBehaviour {
     public Transform TargetOffset;
 
     public CameraFocus[] targetFocus;
@@ -12,7 +12,7 @@ public class CameraFollow : MonoBehaviour {
 
     private CameraShake _cameraShake;
     // Position
-    private Vector3 offset;
+    private Vector3 _offset;
     private Vector3 _desiredPosition;
     private Vector3 _smoothPosition;
 
@@ -22,10 +22,9 @@ public class CameraFollow : MonoBehaviour {
     private Vector3 _finalRotation;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        offset = transform.position - TargetOffset.position;
-        _desiredPosition = TargetOffset.position + offset;
+    void Start() {
+        _offset = transform.position - TargetOffset.position;
+        _desiredPosition = TargetOffset.position + _offset;
         _smoothPosition = _desiredPosition;
         _finalPosition = _desiredPosition;
 
@@ -35,8 +34,7 @@ public class CameraFollow : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void FixedUpdate()
-    {
+    void FixedUpdate() {
 
         Vector3 focusTarget = Vector3.zero;
 
@@ -49,7 +47,7 @@ public class CameraFollow : MonoBehaviour {
 
         focusTarget += TargetOffset.position;
 
-        _desiredPosition = focusTarget + offset;
+        _desiredPosition = focusTarget + _offset;
 
         _smoothPosition = (_smoothPosition * (1 - smoothSpeed)) + (_desiredPosition * smoothSpeed);
 
