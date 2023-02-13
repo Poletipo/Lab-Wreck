@@ -4,7 +4,7 @@ Shader "PostProcess/BlurShader"
 	{
 		[HideInInspector] _MainTex("Texture", 2D) = "white" {}
 		_BlurSize("Blur Size", Int) = 1
-		_SampleCount("Sample Count", Int) = 1
+		_SampleCount("Sample Count", Int) = 5
 	}
 
 		Subshader
