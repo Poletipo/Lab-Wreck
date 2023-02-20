@@ -31,6 +31,7 @@ public class OutlineFeature : ScriptableRendererFeature {
     }
 
     public override void Create() {
-        _outlinePass = new OutlinePass("My Outline Pass", settings.WhenToInsert, settings.MaterialToBlit);
+        _outlinePass = new OutlinePass("My Outline Pass", settings.WhenToInsert,
+            settings.MaterialToBlit, settings.LayerMask);
     }
 }

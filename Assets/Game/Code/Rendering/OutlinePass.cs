@@ -11,14 +11,24 @@ public class OutlinePass : ScriptableRenderPass {
     private RenderTargetIdentifier cameraColorTargetIdent;
     private RenderTargetHandle tempTextureRT;
 
-    public OutlinePass(string profilerTag, RenderPassEvent renderPassEvent, Material materialToBlit) {
+    LayerMask mask;
+    int maskValue;
+    FilteringSettings filters;
+
+    private List<ShaderTagId> m_ShaderTagIdList = new List<ShaderTagId>();
+
+    public OutlinePass(string profilerTag, RenderPassEvent renderPassEvent, Material materialToBlit, LayerMask layerMask) {
         this.profilerTag = profilerTag;
         this.renderPassEvent = renderPassEvent;
         this.materialToBlit = materialToBlit;
+        mask = layerMask;
+
     }
 
     public void Setup(RenderTargetIdentifier cameraColorTargetIdent) {
         this.cameraColorTargetIdent = cameraColorTargetIdent;
+
+        maskValue = 1 << mask.value;
     }
 
     public override void Configure(CommandBuffer cmd, RenderTextureDescriptor cameraTextureDescriptor) {
@@ -32,6 +42,14 @@ public class OutlinePass : ScriptableRenderPass {
 
         cmd.Blit(cameraColorTargetIdent, tempTextureRT.Identifier(), materialToBlit, 0);
         cmd.Blit(tempTextureRT.Identifier(), cameraColorTargetIdent);
+
+
+
+        FilteringSettings filteringSettings = new FilteringSettings(RenderQueueRange.all, mask.value);
+        DrawingSettings drawingSettings = CreateDrawingSettings(ShaderTagId.none, ref renderingData, SortingCriteria.CommonOpaque);
+        drawingSettings.overrideMaterialPassIndex = 0;
+        context.DrawRenderers(renderingData.cullResults, ref drawingSettings, ref filteringSettings);
+
 
         context.ExecuteCommandBuffer(cmd);
 
