@@ -232,7 +232,7 @@ GameObject:
   - component: {fileID: 1248271050}
   - component: {fileID: 1248271049}
   - component: {fileID: 1248271048}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Card
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,7 +273,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 18ef12217755b064688fb1453f97dcec, type: 2}
+  - {fileID: 2100000, guid: 3a9c6e4c4ae19d445a4e3e636db587c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -312,7 +312,7 @@ Transform:
   m_GameObject: {fileID: 1248271047}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: -0.06, z: 0}
-  m_LocalScale: {x: 1.7248, y: 2.6132445, z: 1.7248}
+  m_LocalScale: {x: 9.3032255, y: 2.6132445, z: 1.7248}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
