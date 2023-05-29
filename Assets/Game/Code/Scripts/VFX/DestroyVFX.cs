@@ -3,12 +3,16 @@ using UnityEngine;
 public class DestroyVFX : MonoBehaviour {
 
     private float _timer = 0;
-    private float _duration = 999;
+    [SerializeField] private float _duration = 999;
     public bool IsPooled = false;
 
     private void Start()
     {
-        _duration = GetComponent<ParticleSystem>().main.duration;
+        TryGetComponent(out ParticleSystem particles);
+
+        if (particles != null) {
+            _duration = GetComponent<ParticleSystem>().main.duration;
+        }
     }
 
     private void Update()

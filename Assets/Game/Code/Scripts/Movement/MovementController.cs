@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class MovementController : MonoBehaviour {
 
-    private Vector2 MoveInput;
+    [HideInInspector]
+    public Vector2 MoveInput;
 
     private bool _jumpInput;
 
@@ -22,7 +23,7 @@ public class MovementController : MonoBehaviour {
         }
     }
 
-    Rigidbody rb;
+    [SerializeField] Rigidbody rb;
 
     [Header("Movement")]
     public Transform PlayerInputSpace = default;
@@ -171,8 +172,6 @@ public class MovementController : MonoBehaviour {
 
     private void Setup()
     {
-        MoveInput = new Vector2();
-        rb = GetComponent<Rigidbody>();
         maxDotGroundAngle = Mathf.Cos(Mathf.Deg2Rad * MaxGroundAngle);
     }
 
@@ -183,9 +182,9 @@ public class MovementController : MonoBehaviour {
 
     private void InputReception()
     {
-        MoveInput.x = Input.GetAxisRaw("Horizontal");
-        MoveInput.y = Input.GetAxisRaw("Vertical");
-        JumpInput = Input.GetButton("Jump");
+        //MoveInput.x = Input.GetAxisRaw("Horizontal");
+        //MoveInput.y = Input.GetAxisRaw("Vertical");
+        //JumpInput = Input.GetButton("Jump");
     }
 
     private void OnCollisionEnter(Collision collision)
