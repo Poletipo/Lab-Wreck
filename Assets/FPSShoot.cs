@@ -1,11 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class FPSShoot : MonoBehaviour {
 
+    public Action OnShoot;
+
+    [SerializeField] Animator _animator;
     [SerializeField] Transform aimTransform;
     [SerializeField] GameObject _hitVFX;
+    [SerializeField] ParticleSystem _muzzleFlash;
     [SerializeField] LayerMask mask;
     [SerializeField] float _force = 5;
     [SerializeField] float _distance = 50;
@@ -13,6 +18,12 @@ public class FPSShoot : MonoBehaviour {
 
     public void Shoot()
     {
+
+        OnShoot?.Invoke();
+
+        _animator.Play("Jim_Gun_Fire", 0, 0f);
+        _muzzleFlash.Play();
+
         Ray ray = new Ray(aimTransform.position, aimTransform.forward);
         RaycastHit hit;
 
@@ -31,7 +42,6 @@ public class FPSShoot : MonoBehaviour {
             };
 
             damageable.Hit(data);
-            Debug.Log(hit.collider.name);
         }
         Instantiate(_hitVFX, hit.point, Quaternion.LookRotation(hit.normal, Vector3.up));
     }
