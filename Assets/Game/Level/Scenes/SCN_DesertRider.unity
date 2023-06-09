@@ -246,6 +246,7 @@ GameObject:
   m_Component:
   - component: {fileID: 277083345}
   - component: {fileID: 277083344}
+  - component: {fileID: 277083346}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -330,6 +331,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &277083346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277083343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &359726501
 GameObject:
   m_ObjectHideFlags: 3
@@ -385,7 +406,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359726501}
-  m_LocalRotation: {x: 0.22606426, y: -0, z: -0, w: 0.9741124}
+  m_LocalRotation: {x: 0.22606446, y: -0, z: -0, w: 0.97411233}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -685,8 +706,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073459770}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.2260649, y: 0, z: 0, w: 0.9741123}
+  m_LocalPosition: {x: 0, y: 2.4999998, z: -4.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -839,7 +860,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1373802494}
-  m_LocalRotation: {x: 0.2083786, y: -0, z: -0, w: 0.97804826}
+  m_LocalRotation: {x: 0.2083789, y: -0, z: -0, w: 0.9780482}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1015,7 +1036,7 @@ Terrain:
   m_DrawTreesAndFoliage: 1
   m_StaticShadowCaster: 0
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
+  m_MaterialTemplate: {fileID: 2100000, guid: 594ea882c5a793440b60ff72d896021e, type: 2}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
@@ -1052,6 +1073,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 726261098559304310, guid: 7159b35f88cd81d49b7b342cc58f43af,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 618b185b9a2257846b5c3c5401f5d538, type: 2}
+    - target: {fileID: 958351537467644968, guid: 7159b35f88cd81d49b7b342cc58f43af,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 618b185b9a2257846b5c3c5401f5d538, type: 2}
+    - target: {fileID: 2581414669097247768, guid: 7159b35f88cd81d49b7b342cc58f43af,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 618b185b9a2257846b5c3c5401f5d538, type: 2}
     - target: {fileID: 5004820030077622733, guid: 7159b35f88cd81d49b7b342cc58f43af,
         type: 3}
       propertyPath: m_RootOrder
@@ -1112,5 +1148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertRider
       objectReference: {fileID: 0}
+    - target: {fileID: 8680708048012152430, guid: 7159b35f88cd81d49b7b342cc58f43af,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 618b185b9a2257846b5c3c5401f5d538, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7159b35f88cd81d49b7b342cc58f43af, type: 3}

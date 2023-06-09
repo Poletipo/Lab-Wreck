@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Bullet : MonoBehaviour {
+public class Bullet2D : MonoBehaviour {
     public float speed = 10f;
     public float damage = 25f;
     int dir = 1;

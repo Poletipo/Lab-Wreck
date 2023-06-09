@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class player : MonoBehaviour {
+public class Player2DAssassin : MonoBehaviour {
 
     public enum MovementState {
         Idle,
