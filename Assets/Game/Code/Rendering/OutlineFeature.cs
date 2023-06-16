@@ -18,7 +18,8 @@ public class OutlineFeature : ScriptableRendererFeature {
 
     public OutlineFeatureSettings settings = new OutlineFeatureSettings();
 
-    public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData) {
+    public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
+    {
 
         if (!settings.IsEnabled) {
             return;
@@ -30,7 +31,8 @@ public class OutlineFeature : ScriptableRendererFeature {
         renderer.EnqueuePass(_outlinePass);
     }
 
-    public override void Create() {
+    public override void Create()
+    {
         _outlinePass = new OutlinePass("My Outline Pass", settings.WhenToInsert,
             settings.MaterialToBlit);
     }

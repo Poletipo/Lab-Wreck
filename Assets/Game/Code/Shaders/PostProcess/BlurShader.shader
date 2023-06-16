@@ -19,8 +19,6 @@ Shader "PostProcess/BlurShader"
 				#pragma vertex vert
 				#pragma fragment frag
 
-
-
 				sampler2D _MainTex;
 				float4 _MainTex_TexelSize;
 				int _BlurSize;
@@ -49,31 +47,37 @@ Shader "PostProcess/BlurShader"
 			//the fragment shader
 			fixed4 frag(v2f i) : SV_TARGET{
 				//get source color from texture
+				float4 col;
 
+			if (_BlurSize == 0) {
+				return tex2D(_MainTex, i.uv);
+			}
 
-				float4 col;//= tex2D(_MainTex, i.uv);
+			uint sampleCount = _SampleCount > _BlurSize ? _BlurSize : _SampleCount;
 
+			float sampleDistance = _BlurSize / sampleCount;
 
+			int iterations = 0;
 
-				for (int k = -_BlurSize; k <= _BlurSize; k++) {
-					for (int j = -_BlurSize; j <= _BlurSize; j++) {
+			for (int k = -_BlurSize; k <= _BlurSize; k += sampleDistance) {
+				for (int j = -_BlurSize; j <= _BlurSize; j += sampleDistance) {
 
-						float2 coord = i.uv + float2(j * _MainTex_TexelSize.x,k * _MainTex_TexelSize.y);
+					float2 coord = i.uv + float2(j * _MainTex_TexelSize.x,k * _MainTex_TexelSize.y);
 
-						col += tex2D(_MainTex, coord);
-
-					}
-
+					col += tex2D(_MainTex, coord);
+					iterations++;
 				}
 
-				col /= (_BlurSize * 2 + 1) * (_BlurSize * 2 + 1);
-
-				//col.a = 1;
-
-				return col;
 			}
-				ENDCG
 
-			}
+			col /= iterations;
+
+			//col.a = 1;
+
+			return col;
+		}
+			ENDCG
+
+		}
 		}
 }

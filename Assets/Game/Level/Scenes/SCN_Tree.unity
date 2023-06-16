@@ -315,7 +315,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   postProcessMaterial: {fileID: 2100000, guid: 942eb931f1ed81d48b328c6097bd9331, type: 2}
-  blurValue: 0
+  _blurSize: 0
+  _sampleCount: 1
 --- !u!1001 &532264505
 PrefabInstance:
   m_ObjectHideFlags: 0

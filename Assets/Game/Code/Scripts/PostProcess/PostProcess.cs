@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PostProcess : MonoBehaviour
-{
+public class PostProcess : MonoBehaviour {
 
 
     [SerializeField] Material postProcessMaterial;
 
-    [Range(0,100)]
-    [SerializeField] int blurValue = 0;
+    [Range(0, 100)]
+    [SerializeField] int _blurSize = 0;
+    [Range(1, 100)]
+    [SerializeField] int _sampleCount = 1;
 
 
 
@@ -29,7 +30,8 @@ public class PostProcess : MonoBehaviour
 
     private void Update()
     {
-        postProcessMaterial.SetInt("_BlurSize", blurValue);
+        postProcessMaterial.SetInt("_BlurSize", _blurSize);
+        postProcessMaterial.SetInt("_SampleCount", _sampleCount);
     }
 
 }
