@@ -25,7 +25,7 @@ public class OutlineFeature : ScriptableRendererFeature {
             return;
         }
 
-        RenderTargetIdentifier cameraColorTargetIdent = renderer.cameraColorTarget;
+        RenderTargetIdentifier cameraColorTargetIdent = renderer.cameraColorTargetHandle;
         _outlinePass.Setup(cameraColorTargetIdent);
 
         renderer.EnqueuePass(_outlinePass);

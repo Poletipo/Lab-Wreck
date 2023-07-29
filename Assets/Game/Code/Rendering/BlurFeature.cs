@@ -27,14 +27,14 @@ public class BlurFeature : ScriptableRendererFeature {
             return;
         }
 
-        _blurPass.Setup(renderer.cameraColorTarget);
+        _blurPass.Setup(renderer);
 
         renderer.EnqueuePass(_blurPass);
     }
 
     public override void Create()
     {
-        _blurPass = new BlurPass(settings.MaterialToBlit, settings.BlurSize,
+        _blurPass = new BlurPass(settings.MaterialToBlit, settings.WhenToInsert, settings.BlurSize,
             settings.SampleCount);
     }
 }
