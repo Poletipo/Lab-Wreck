@@ -105,7 +105,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 2
+    serializedVersion: 3
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -118,7 +118,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    buildHeightMesh: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -129,6 +129,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -192,12 +193,16 @@ PrefabInstance:
       value: FireExtinguisher (145)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &3105750
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -261,12 +266,16 @@ PrefabInstance:
       value: FireExtinguisher (193)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &6507784
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -330,12 +339,16 @@ PrefabInstance:
       value: FireExtinguisher (114)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &10858639
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -399,12 +412,16 @@ PrefabInstance:
       value: FireExtinguisher (144)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &17322514
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -468,6 +485,9 @@ PrefabInstance:
       value: FireExtinguisher (22)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &22114241 stripped
 Transform:
@@ -498,6 +518,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -561,6 +582,9 @@ PrefabInstance:
       value: FireExtinguisher (20)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &39494553 stripped
 Transform:
@@ -573,6 +597,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -636,12 +661,16 @@ PrefabInstance:
       value: FireExtinguisher (127)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &54493438
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -705,6 +734,9 @@ PrefabInstance:
       value: FireExtinguisher (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &68912409 stripped
 Transform:
@@ -717,6 +749,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -780,12 +813,16 @@ PrefabInstance:
       value: FireExtinguisher (47)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &75769729
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -849,12 +886,16 @@ PrefabInstance:
       value: FireExtinguisher (151)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &76766379
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -918,12 +959,16 @@ PrefabInstance:
       value: FireExtinguisher (21)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &86053344
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -987,12 +1032,16 @@ PrefabInstance:
       value: FireExtinguisher (169)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &86180316
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -1056,12 +1105,16 @@ PrefabInstance:
       value: FireExtinguisher (174)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &97757732
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -1125,12 +1178,16 @@ PrefabInstance:
       value: FireExtinguisher (101)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &109963595
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -1194,6 +1251,9 @@ PrefabInstance:
       value: FireExtinguisher (187)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &110331821 stripped
 Transform:
@@ -1246,14 +1306,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 1
+  m_Version: 3
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
   m_LightLayerMask: 1
+  m_RenderingLayers: 1
   m_CustomShadowLayers: 0
   m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 1
 --- !u!108 &114461014
 Light:
   m_ObjectHideFlags: 0
@@ -1321,6 +1384,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -1384,6 +1448,9 @@ PrefabInstance:
       value: FireExtinguisher (104)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1 &134111898
 GameObject:
@@ -1430,14 +1497,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 1
+  m_Version: 3
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
   m_LightLayerMask: 1
+  m_RenderingLayers: 1
   m_CustomShadowLayers: 0
   m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 1
 --- !u!108 &134111901
 Light:
   m_ObjectHideFlags: 0
@@ -1505,6 +1575,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -1568,12 +1639,16 @@ PrefabInstance:
       value: FireExtinguisher (106)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &140406760
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -1637,6 +1712,9 @@ PrefabInstance:
       value: FireExtinguisher (119)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &149252017 stripped
 Transform:
@@ -1649,6 +1727,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -1712,6 +1791,9 @@ PrefabInstance:
       value: FireExtinguisher (36)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &162694003 stripped
 Transform:
@@ -1730,6 +1812,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -1793,12 +1876,16 @@ PrefabInstance:
       value: FireExtinguisher (135)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &168697822
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -1862,12 +1949,16 @@ PrefabInstance:
       value: FireExtinguisher (30)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &168911115
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -1931,12 +2022,16 @@ PrefabInstance:
       value: FireExtinguisher (88)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &169946270
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -2000,6 +2095,9 @@ PrefabInstance:
       value: FireExtinguisher (142)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1 &180879950
 GameObject:
@@ -2046,8 +2144,17 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180879950}
   m_Material: {fileID: 13400000, guid: b157ddcec14e1144d9b1389ed4ae5892, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
+  serializedVersion: 2
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -2059,10 +2166,21 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180879950}
-  serializedVersion: 2
+  serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -2128,14 +2246,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 1
+  m_Version: 3
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
   m_LightLayerMask: 1
+  m_RenderingLayers: 1
   m_CustomShadowLayers: 0
   m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 1
 --- !u!108 &180969489
 Light:
   m_ObjectHideFlags: 0
@@ -2209,6 +2330,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -2272,12 +2394,16 @@ PrefabInstance:
       value: FireExtinguisher (89)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &192438067
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -2341,12 +2467,16 @@ PrefabInstance:
       value: FireExtinguisher (147)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &198653310
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -2410,6 +2540,9 @@ PrefabInstance:
       value: FireExtinguisher (175)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &204759170 stripped
 Transform:
@@ -2422,6 +2555,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -2485,6 +2619,9 @@ PrefabInstance:
       value: FireExtinguisher (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &206832465 stripped
 Transform:
@@ -2509,6 +2646,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -2572,12 +2710,16 @@ PrefabInstance:
       value: FireExtinguisher (83)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &226507370
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -2641,6 +2783,9 @@ PrefabInstance:
       value: FireExtinguisher (171)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &234662699 stripped
 Transform:
@@ -2665,6 +2810,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -2728,6 +2874,9 @@ PrefabInstance:
       value: FireExtinguisher (123)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &249309427 stripped
 Transform:
@@ -2746,6 +2895,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -2809,12 +2959,16 @@ PrefabInstance:
       value: FireExtinguisher (156)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &255022580
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -2878,6 +3032,9 @@ PrefabInstance:
       value: FireExtinguisher (176)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &258138514 stripped
 Transform:
@@ -2896,6 +3053,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -2959,6 +3117,9 @@ PrefabInstance:
       value: FireExtinguisher (170)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &282862235 stripped
 Transform:
@@ -3019,6 +3180,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -3082,6 +3244,9 @@ PrefabInstance:
       value: FireExtinguisher (12)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1 &288730923 stripped
 GameObject:
@@ -3126,6 +3291,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -3189,6 +3355,9 @@ PrefabInstance:
       value: FireExtinguisher (107)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!43 &306152810
 Mesh:
@@ -3196,8 +3365,8 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-52604
-  serializedVersion: 10
+  m_Name: pb_Mesh27640
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -3344,6 +3513,7 @@ Mesh:
     m_Center: {x: -2.9603176, y: 2.1615214, z: 4.779075}
     m_Extent: {x: 3.6396632, y: 2.1615214, z: 4.779074}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -3371,6 +3541,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -3434,6 +3605,9 @@ PrefabInstance:
       value: FireExtinguisher (46)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &317855165 stripped
 Transform:
@@ -3500,9 +3674,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342632490}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 547060469}
@@ -3826,6 +4008,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -3889,6 +4072,9 @@ PrefabInstance:
       value: FireExtinguisher (160)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &348598569 stripped
 Transform:
@@ -4002,6 +4188,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -4065,6 +4252,9 @@ PrefabInstance:
       value: FireExtinguisher (32)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &379948699 stripped
 Transform:
@@ -4077,6 +4267,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -4140,6 +4331,9 @@ PrefabInstance:
       value: FireExtinguisher (109)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1 &394419276
 GameObject:
@@ -4170,9 +4364,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394419276}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1107070507}
@@ -4536,14 +4738,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 1
+  m_Version: 3
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
   m_LightLayerMask: 1
+  m_RenderingLayers: 1
   m_CustomShadowLayers: 0
   m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 1
 --- !u!108 &415496216
 Light:
   m_ObjectHideFlags: 0
@@ -4617,6 +4822,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -4680,12 +4886,16 @@ PrefabInstance:
       value: FireExtinguisher (64)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &431206860
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -4749,12 +4959,16 @@ PrefabInstance:
       value: FireExtinguisher (96)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &432255608
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -4818,12 +5032,16 @@ PrefabInstance:
       value: FireExtinguisher (132)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &434850944
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -4887,6 +5105,9 @@ PrefabInstance:
       value: FireExtinguisher (146)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &440644320 stripped
 Transform:
@@ -4899,6 +5120,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -4962,12 +5184,16 @@ PrefabInstance:
       value: FireExtinguisher (108)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &447709426
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -5031,6 +5257,9 @@ PrefabInstance:
       value: FireExtinguisher (188)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1 &454741633
 GameObject:
@@ -5061,9 +5290,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454741633}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 306152810}
@@ -5875,14 +6112,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 1
+  m_Version: 3
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
   m_LightLayerMask: 1
+  m_RenderingLayers: 1
   m_CustomShadowLayers: 0
   m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 1
 --- !u!108 &479889431
 Light:
   m_ObjectHideFlags: 0
@@ -5956,6 +6196,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -6019,6 +6260,9 @@ PrefabInstance:
       value: FireExtinguisher (61)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &510564636 stripped
 Transform:
@@ -6084,6 +6328,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -6147,12 +6392,16 @@ PrefabInstance:
       value: FireExtinguisher (38)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &514855255
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -6216,6 +6465,9 @@ PrefabInstance:
       value: FireExtinguisher (70)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &515820253 stripped
 Transform:
@@ -6240,6 +6492,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -6303,12 +6556,16 @@ PrefabInstance:
       value: FireExtinguisher (52)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &527379595
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -6372,12 +6629,16 @@ PrefabInstance:
       value: FireExtinguisher (136)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &533793004
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -6441,12 +6702,16 @@ PrefabInstance:
       value: FireExtinguisher (186)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &537207828
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -6510,6 +6775,9 @@ PrefabInstance:
       value: FireExtinguisher (75)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!43 &547060469
 Mesh:
@@ -6517,8 +6785,8 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-94018
-  serializedVersion: 10
+  m_Name: pb_Mesh27560
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -6665,6 +6933,7 @@ Mesh:
     m_Center: {x: -0.89645445, y: 0.86260915, z: -0.37183484}
     m_Extent: {x: 0.89645445, y: 0.86260915, z: 1.2032455}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -6680,6 +6949,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -6743,6 +7013,9 @@ PrefabInstance:
       value: FireExtinguisher (53)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &549379618 stripped
 Transform:
@@ -6795,8 +7068,8 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-76012
-  serializedVersion: 10
+  m_Name: pb_Mesh28006
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -6943,6 +7216,7 @@ Mesh:
     m_Center: {x: -2.5814705, y: 0.17605108, z: -0.98220116}
     m_Extent: {x: 2.2675738, y: 1.139601, z: 1.2024779}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1.4556496
@@ -6958,6 +7232,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -7021,12 +7296,16 @@ PrefabInstance:
       value: FireExtinguisher (180)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &564838844
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -7090,6 +7369,9 @@ PrefabInstance:
       value: FireExtinguisher (77)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &570331158 stripped
 Transform:
@@ -7120,6 +7402,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -7183,12 +7466,16 @@ PrefabInstance:
       value: FireExtinguisher (115)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &588744201
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -7252,6 +7539,9 @@ PrefabInstance:
       value: FireExtinguisher (62)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1 &590725093
 GameObject:
@@ -7347,6 +7637,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -7410,6 +7701,9 @@ PrefabInstance:
       value: FireExtinguisher (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &603624611 stripped
 Transform:
@@ -7428,6 +7722,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -7491,12 +7786,16 @@ PrefabInstance:
       value: FireExtinguisher (31)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &610776146
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -7560,12 +7859,16 @@ PrefabInstance:
       value: FireExtinguisher (190)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &616787827
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -7629,6 +7932,9 @@ PrefabInstance:
       value: FireExtinguisher (56)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &624743650 stripped
 Transform:
@@ -7641,6 +7947,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -7704,6 +8011,9 @@ PrefabInstance:
       value: FireExtinguisher (183)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &635319745 stripped
 Transform:
@@ -7752,9 +8062,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651073460}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1471522275}
@@ -8949,6 +9267,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -9012,6 +9331,9 @@ PrefabInstance:
       value: FireExtinguisher (81)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &657484364 stripped
 Transform:
@@ -9024,6 +9346,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -9087,12 +9410,16 @@ PrefabInstance:
       value: FireExtinguisher (91)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &679649105
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -9156,6 +9483,9 @@ PrefabInstance:
       value: FireExtinguisher (134)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &679700779 stripped
 Transform:
@@ -9175,8 +9505,8 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-89474
-  serializedVersion: 10
+  m_Name: pb_Mesh28602
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -9323,6 +9653,7 @@ Mesh:
     m_Center: {x: -2.5814705, y: 0.17605108, z: -0.98220116}
     m_Extent: {x: 2.2675738, y: 1.139601, z: 1.2024779}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1.4556496
@@ -9368,9 +9699,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 689980346}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1906469752}
@@ -9548,6 +9887,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -9611,12 +9951,16 @@ PrefabInstance:
       value: FireExtinguisher (29)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &709359729
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -9680,12 +10024,16 @@ PrefabInstance:
       value: FireExtinguisher (173)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &710883927
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -9749,6 +10097,9 @@ PrefabInstance:
       value: FireExtinguisher (185)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &728824001 stripped
 Transform:
@@ -9761,6 +10112,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -9824,6 +10176,9 @@ PrefabInstance:
       value: FireExtinguisher (24)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &732966706 stripped
 Transform:
@@ -9837,8 +10192,8 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-64030
-  serializedVersion: 10
+  m_Name: pb_Mesh28330
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -9985,6 +10340,7 @@ Mesh:
     m_Center: {x: 14.3830385, y: -0.36479917, z: -12.300344}
     m_Extent: {x: 11.744294, y: 0.0000012814999, z: 5.4240723}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -10006,6 +10362,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -10069,12 +10426,16 @@ PrefabInstance:
       value: FireExtinguisher (60)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &755066678
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -10138,12 +10499,16 @@ PrefabInstance:
       value: FireExtinguisher (125)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &758554078
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -10207,12 +10572,16 @@ PrefabInstance:
       value: FireExtinguisher (149)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &759664395
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -10276,12 +10645,16 @@ PrefabInstance:
       value: FireExtinguisher (14)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &761642473
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -10345,12 +10718,16 @@ PrefabInstance:
       value: FireExtinguisher (120)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &765341674
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -10414,6 +10791,9 @@ PrefabInstance:
       value: FireExtinguisher (63)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1 &766898575
 GameObject:
@@ -10479,6 +10859,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -10542,6 +10923,9 @@ PrefabInstance:
       value: FireExtinguisher (163)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &773049432 stripped
 Transform:
@@ -10554,6 +10938,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -10617,6 +11002,9 @@ PrefabInstance:
       value: FireExtinguisher (26)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &783271178 stripped
 Transform:
@@ -10629,6 +11017,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -10692,12 +11081,16 @@ PrefabInstance:
       value: FireExtinguisher (148)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &791762300
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -10761,6 +11154,9 @@ PrefabInstance:
       value: FireExtinguisher (99)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &801595202 stripped
 Transform:
@@ -10855,6 +11251,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -10918,6 +11315,9 @@ PrefabInstance:
       value: FireExtinguisher (19)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1 &822910191
 GameObject:
@@ -11242,6 +11642,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -11271,6 +11672,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     startSize:
@@ -11592,6 +11994,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
+    gravitySource: 0
     maxNumParticles: 1000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
@@ -12379,6 +12782,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 3
       minGradient:
@@ -12408,6 +12812,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
   UVModule:
@@ -14628,6 +15033,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -14657,6 +15063,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
@@ -15034,6 +15441,7 @@ ParticleSystem:
         m_RotationOrder: 4
     minVertexDistance: 0.2
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     ribbonCount: 1
     shadowBias: 0.5
     worldSpace: 0
@@ -15076,6 +15484,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -15105,6 +15514,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     widthOverTrail:
@@ -15192,6 +15602,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -15221,6 +15632,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
   CustomDataModule:
@@ -15259,6 +15671,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -15288,6 +15701,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     colorLabel0: Color
@@ -15541,6 +15955,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -15570,6 +15985,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
+        m_ColorSpace: -1
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
     colorLabel1: Color
@@ -15806,6 +16222,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -15869,12 +16286,16 @@ PrefabInstance:
       value: FireExtinguisher (85)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &842928821
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -15938,12 +16359,16 @@ PrefabInstance:
       value: FireExtinguisher (182)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &850774904
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -16007,6 +16432,9 @@ PrefabInstance:
       value: FireExtinguisher (80)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &850864310 stripped
 Transform:
@@ -16025,6 +16453,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -16088,12 +16517,16 @@ PrefabInstance:
       value: FireExtinguisher (118)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &859095923
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -16157,6 +16590,9 @@ PrefabInstance:
       value: FireExtinguisher (84)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &861187517 stripped
 Transform:
@@ -16175,6 +16611,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -16238,6 +16675,9 @@ PrefabInstance:
       value: FireExtinguisher (16)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1 &883217222
 GameObject:
@@ -16268,9 +16708,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 883217222}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1326664693}
@@ -16897,9 +17345,17 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -16998,9 +17454,20 @@ MonoBehaviour:
   m_Dithering: 0
   m_ClearDepth: 1
   m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+  m_TaaSettings:
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!1 &935990239
 GameObject:
   m_ObjectHideFlags: 0
@@ -17046,14 +17513,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 1
+  m_Version: 3
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
   m_LightLayerMask: 1
+  m_RenderingLayers: 1
   m_CustomShadowLayers: 0
   m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 1
 --- !u!108 &935990242
 Light:
   m_ObjectHideFlags: 0
@@ -17145,6 +17615,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -17208,12 +17679,16 @@ PrefabInstance:
       value: FireExtinguisher (73)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &965800018
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -17277,12 +17752,16 @@ PrefabInstance:
       value: FireExtinguisher (87)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &969340823
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -17346,6 +17825,9 @@ PrefabInstance:
       value: FireExtinguisher (178)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &985548657 stripped
 Transform:
@@ -17358,6 +17840,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -17421,6 +17904,9 @@ PrefabInstance:
       value: FireExtinguisher (45)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1 &1002036132
 GameObject:
@@ -17467,14 +17953,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 1
+  m_Version: 3
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
   m_LightLayerMask: 1
+  m_RenderingLayers: 1
   m_CustomShadowLayers: 0
   m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 1
 --- !u!108 &1002036135
 Light:
   m_ObjectHideFlags: 0
@@ -17560,6 +18049,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -17623,6 +18113,9 @@ PrefabInstance:
       value: FireExtinguisher (95)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1016769716 stripped
 Transform:
@@ -17641,6 +18134,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -17704,6 +18198,9 @@ PrefabInstance:
       value: FireExtinguisher (13)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1023100612 stripped
 Transform:
@@ -17722,6 +18219,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -17785,6 +18283,9 @@ PrefabInstance:
       value: FireExtinguisher (161)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1 &1031570908
 GameObject:
@@ -17862,7 +18363,9 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -17892,6 +18395,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -17955,12 +18459,16 @@ PrefabInstance:
       value: FireExtinguisher (153)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1037574394
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -18024,6 +18532,9 @@ PrefabInstance:
       value: FireExtinguisher (76)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1038565228 stripped
 Transform:
@@ -18060,9 +18571,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039914770}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 562299409}
@@ -19264,8 +19783,8 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-56262
-  serializedVersion: 10
+  m_Name: pb_Mesh28374
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -19412,6 +19931,7 @@ Mesh:
     m_Center: {x: 14.383038, y: -0.035764284, z: 4.4016094}
     m_Extent: {x: 11.744293, y: 0.035864286, z: 4.2910633}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1.0000001
@@ -19427,6 +19947,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -19490,6 +20011,9 @@ PrefabInstance:
       value: FireExtinguisher (69)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1061136968 stripped
 Transform:
@@ -19502,6 +20026,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -19565,6 +20090,9 @@ PrefabInstance:
       value: FireExtinguisher (172)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1066170466 stripped
 Transform:
@@ -19577,6 +20105,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -19640,12 +20169,16 @@ PrefabInstance:
       value: FireExtinguisher (164)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1074236546
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -19709,6 +20242,9 @@ PrefabInstance:
       value: FireExtinguisher (28)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1084104420 stripped
 Transform:
@@ -19733,6 +20269,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 3911001399415616822, guid: de049e25f4abbf2439fa18c580120a4d,
@@ -19796,6 +20333,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de049e25f4abbf2439fa18c580120a4d, type: 3}
 --- !u!4 &1099657570 stripped
 Transform:
@@ -19814,6 +20354,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -19877,6 +20418,9 @@ PrefabInstance:
       value: FireExtinguisher (90)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!43 &1107070507
 Mesh:
@@ -19884,8 +20428,8 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-93340
-  serializedVersion: 10
+  m_Name: pb_Mesh27600
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -20032,6 +20576,7 @@ Mesh:
     m_Center: {x: -0.89645445, y: 0.86260915, z: -0.37183484}
     m_Extent: {x: 0.89645445, y: 0.86260915, z: 1.2032455}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -20087,14 +20632,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 1
+  m_Version: 3
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
   m_LightLayerMask: 1
+  m_RenderingLayers: 1
   m_CustomShadowLayers: 0
   m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 1
 --- !u!108 &1113295484
 Light:
   m_ObjectHideFlags: 0
@@ -20162,6 +20710,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -20225,12 +20774,16 @@ PrefabInstance:
       value: FireExtinguisher (94)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1121585912
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -20294,6 +20847,9 @@ PrefabInstance:
       value: FireExtinguisher (167)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1134890812 stripped
 Transform:
@@ -20352,6 +20908,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -20415,6 +20972,9 @@ PrefabInstance:
       value: FireExtinguisher (105)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1153591981 stripped
 Transform:
@@ -20427,6 +20987,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -20490,12 +21051,16 @@ PrefabInstance:
       value: FireExtinguisher (86)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1169768631
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -20559,12 +21124,16 @@ PrefabInstance:
       value: FireExtinguisher (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1170223308
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -20628,6 +21197,9 @@ PrefabInstance:
       value: FireExtinguisher (72)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1182905512 stripped
 Transform:
@@ -20640,6 +21212,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -20703,12 +21276,16 @@ PrefabInstance:
       value: FireExtinguisher (55)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1200531828
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -20772,12 +21349,16 @@ PrefabInstance:
       value: FireExtinguisher (23)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1205583339
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -20841,6 +21422,9 @@ PrefabInstance:
       value: FireExtinguisher (110)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1205665054 stripped
 Transform:
@@ -20859,6 +21443,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -20922,12 +21507,16 @@ PrefabInstance:
       value: FireExtinguisher (152)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1227988690
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -20991,6 +21580,9 @@ PrefabInstance:
       value: FireExtinguisher (192)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1231916797 stripped
 Transform:
@@ -21009,6 +21601,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -21072,12 +21665,16 @@ PrefabInstance:
       value: FireExtinguisher (50)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1240331887
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -21141,12 +21738,16 @@ PrefabInstance:
       value: FireExtinguisher (143)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1243254145
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 554572678}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 7d2d91c763b085645bab33a080b36d9d,
@@ -21275,6 +21876,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -4390346178701520496, guid: 7d2d91c763b085645bab33a080b36d9d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 31642073}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7d2d91c763b085645bab33a080b36d9d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 288730925}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7d2d91c763b085645bab33a080b36d9d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 288730926}
+    - targetCorrespondingSourceObject: {fileID: 8366309669949912693, guid: 7d2d91c763b085645bab33a080b36d9d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 357233528}
   m_SourcePrefab: {fileID: 100100000, guid: 7d2d91c763b085645bab33a080b36d9d, type: 3}
 --- !u!1 &1244968503
 GameObject:
@@ -21383,14 +22003,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 1
+  m_Version: 3
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
   m_LightLayerMask: 1
+  m_RenderingLayers: 1
   m_CustomShadowLayers: 0
   m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 1
 --- !u!1 &1249757586
 GameObject:
   m_ObjectHideFlags: 0
@@ -21420,9 +22043,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249757586}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1435211004}
@@ -22194,6 +22825,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -22257,6 +22889,9 @@ PrefabInstance:
       value: FireExtinguisher (103)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1 &1257639527
 GameObject:
@@ -22287,9 +22922,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257639527}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1876843716}
@@ -22613,6 +23256,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -22676,12 +23320,16 @@ PrefabInstance:
       value: FireExtinguisher (184)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1282185700
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -22745,6 +23393,9 @@ PrefabInstance:
       value: FireExtinguisher (71)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1287804186 stripped
 Transform:
@@ -22757,6 +23408,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -22820,6 +23472,9 @@ PrefabInstance:
       value: FireExtinguisher (48)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1291966931 stripped
 Transform:
@@ -22832,6 +23487,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -22895,12 +23551,16 @@ PrefabInstance:
       value: FireExtinguisher (121)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1300912920
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -22964,12 +23624,16 @@ PrefabInstance:
       value: FireExtinguisher (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1301836795
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -23033,6 +23697,9 @@ PrefabInstance:
       value: FireExtinguisher (66)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1302501396 stripped
 Transform:
@@ -23051,6 +23718,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -23114,6 +23782,9 @@ PrefabInstance:
       value: FireExtinguisher (150)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1306865411 stripped
 Transform:
@@ -23126,6 +23797,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -23189,6 +23861,9 @@ PrefabInstance:
       value: FireExtinguisher (168)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1313734530 stripped
 Transform:
@@ -23201,6 +23876,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -23264,6 +23940,9 @@ PrefabInstance:
       value: FireExtinguisher (74)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!43 &1326664693
 Mesh:
@@ -23271,8 +23950,8 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-92568
-  serializedVersion: 10
+  m_Name: pb_Mesh27898
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -23419,6 +24098,7 @@ Mesh:
     m_Center: {x: -0.89614916, y: 0.67830586, z: 0.41854286}
     m_Extent: {x: 0.89614916, y: 0.67830586, z: 1.9936228}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -23435,8 +24115,8 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-89144
-  serializedVersion: 10
+  m_Name: pb_Mesh28212
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -23583,6 +24263,7 @@ Mesh:
     m_Center: {x: -2.5814705, y: 0.17605108, z: -0.98220116}
     m_Extent: {x: 2.2675738, y: 1.139601, z: 1.2024779}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1.4556496
@@ -23604,6 +24285,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -23667,6 +24349,9 @@ PrefabInstance:
       value: FireExtinguisher (131)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1349091256 stripped
 Transform:
@@ -23703,9 +24388,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354976386}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1663823429}
@@ -24071,9 +24764,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385466494}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1337050260}
@@ -25280,6 +25981,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -25343,12 +26045,16 @@ PrefabInstance:
       value: FireExtinguisher (112)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1396505186
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -25412,6 +26118,9 @@ PrefabInstance:
       value: FireExtinguisher (67)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1399306756 stripped
 Transform:
@@ -25436,6 +26145,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -25499,6 +26209,9 @@ PrefabInstance:
       value: FireExtinguisher (27)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1 &1424957728
 GameObject:
@@ -25566,6 +26279,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -25629,6 +26343,9 @@ PrefabInstance:
       value: FireExtinguisher (166)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!43 &1435211004
 Mesh:
@@ -25636,8 +26353,8 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-59848
-  serializedVersion: 10
+  m_Name: pb_Mesh28116
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -25784,6 +26501,7 @@ Mesh:
     m_Center: {x: -2.9603176, y: 2.1615214, z: 4.779075}
     m_Extent: {x: 3.6396632, y: 2.1615214, z: 4.779074}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -25805,6 +26523,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -25868,12 +26587,16 @@ PrefabInstance:
       value: FireExtinguisher (159)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1438573268
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -25937,6 +26660,9 @@ PrefabInstance:
       value: FireExtinguisher (138)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1445701574 stripped
 Transform:
@@ -25949,6 +26675,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -26012,6 +26739,9 @@ PrefabInstance:
       value: FireExtinguisher (35)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1448613057 stripped
 Transform:
@@ -26024,6 +26754,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -26087,6 +26818,9 @@ PrefabInstance:
       value: FireExtinguisher (139)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1458221484 stripped
 Transform:
@@ -26105,6 +26839,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -26168,6 +26903,9 @@ PrefabInstance:
       value: FireExtinguisher (25)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!43 &1471522275
 Mesh:
@@ -26175,8 +26913,8 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-88682
-  serializedVersion: 10
+  m_Name: pb_Mesh27756
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -26323,6 +27061,7 @@ Mesh:
     m_Center: {x: -2.5814705, y: 0.17605108, z: -0.98220116}
     m_Extent: {x: 2.2675738, y: 1.139601, z: 1.2024779}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1.4556496
@@ -26344,6 +27083,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -26407,12 +27147,16 @@ PrefabInstance:
       value: FireExtinguisher (165)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1486813867
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -26476,12 +27220,16 @@ PrefabInstance:
       value: FireExtinguisher (177)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1494177575
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -26545,6 +27293,9 @@ PrefabInstance:
       value: FireExtinguisher (37)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1495248568 stripped
 Transform:
@@ -26563,6 +27314,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -26626,12 +27378,16 @@ PrefabInstance:
       value: FireExtinguisher (117)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1502581941
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -26695,12 +27451,16 @@ PrefabInstance:
       value: FireExtinguisher (116)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1509045011
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -26764,12 +27524,16 @@ PrefabInstance:
       value: FireExtinguisher (51)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1516333677
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -26833,6 +27597,9 @@ PrefabInstance:
       value: FireExtinguisher (40)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1517952657 stripped
 Transform:
@@ -26851,6 +27618,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -26914,6 +27682,9 @@ PrefabInstance:
       value: FireExtinguisher (124)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1548154657 stripped
 Transform:
@@ -26926,6 +27697,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -26989,6 +27761,9 @@ PrefabInstance:
       value: FireExtinguisher (11)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1555040074 stripped
 Transform:
@@ -27013,6 +27788,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -27076,6 +27852,9 @@ PrefabInstance:
       value: FireExtinguisher (141)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1570828867 stripped
 Transform:
@@ -27088,6 +27867,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -27151,12 +27931,16 @@ PrefabInstance:
       value: FireExtinguisher (111)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1573673101
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -27220,12 +28004,16 @@ PrefabInstance:
       value: FireExtinguisher (65)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1573808892
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -27289,12 +28077,16 @@ PrefabInstance:
       value: FireExtinguisher (44)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1577976576
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -27358,6 +28150,9 @@ PrefabInstance:
       value: FireExtinguisher (34)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1598479566 stripped
 Transform:
@@ -27459,9 +28254,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604912730}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 738676746}
@@ -27641,6 +28444,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -27704,6 +28508,9 @@ PrefabInstance:
       value: FireExtinguisher (189)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1610639246 stripped
 Transform:
@@ -27716,6 +28523,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -27779,6 +28587,9 @@ PrefabInstance:
       value: FireExtinguisher (191)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1625635787 stripped
 Transform:
@@ -27797,6 +28608,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -27860,12 +28672,16 @@ PrefabInstance:
       value: FireExtinguisher (128)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1642076967
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -27929,12 +28745,16 @@ PrefabInstance:
       value: FireExtinguisher (181)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1642431226
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -27998,6 +28818,9 @@ PrefabInstance:
       value: FireExtinguisher (15)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1 &1646758872
 GameObject:
@@ -28074,6 +28897,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -28137,6 +28961,9 @@ PrefabInstance:
       value: FireExtinguisher (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!43 &1663823429
 Mesh:
@@ -28144,8 +28971,8 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-75156
-  serializedVersion: 10
+  m_Name: pb_Mesh28190
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -28292,6 +29119,7 @@ Mesh:
     m_Center: {x: -1.2159138, y: 1.5575752, z: -0.78753996}
     m_Extent: {x: 1.2159138, y: 1.5575752, z: 0.78753996}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -28307,6 +29135,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -28370,6 +29199,9 @@ PrefabInstance:
       value: FireExtinguisher (157)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1 &1680160969
 GameObject:
@@ -28400,9 +29232,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680160969}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1057993131}
@@ -28586,6 +29426,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -28649,6 +29490,9 @@ PrefabInstance:
       value: FireExtinguisher (97)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1690178852 stripped
 Transform:
@@ -28661,6 +29505,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -28724,6 +29569,9 @@ PrefabInstance:
       value: FireExtinguisher (43)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1694561949 stripped
 Transform:
@@ -28736,6 +29584,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -28799,12 +29648,16 @@ PrefabInstance:
       value: FireExtinguisher (129)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1708922579
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -28868,6 +29721,9 @@ PrefabInstance:
       value: FireExtinguisher (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1714138688 stripped
 Transform:
@@ -28934,6 +29790,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -28997,12 +29854,16 @@ PrefabInstance:
       value: FireExtinguisher (49)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1792633288
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 2069618377}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 70f2bd39f4c13444c8c12748fa4f7735,
@@ -29091,12 +29952,20 @@ PrefabInstance:
       value: Revolver_Low
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 70f2bd39f4c13444c8c12748fa4f7735,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 822910192}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70f2bd39f4c13444c8c12748fa4f7735, type: 3}
 --- !u!1001 &1793565568
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -29160,12 +30029,16 @@ PrefabInstance:
       value: FireExtinguisher (137)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1794072513
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -29229,6 +30102,9 @@ PrefabInstance:
       value: FireExtinguisher (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1802032608 stripped
 Transform:
@@ -29241,6 +30117,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -29304,12 +30181,16 @@ PrefabInstance:
       value: FireExtinguisher (122)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1805060793
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -29373,6 +30254,9 @@ PrefabInstance:
       value: FireExtinguisher (102)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1815918144 stripped
 Transform:
@@ -29385,6 +30269,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -29448,12 +30333,16 @@ PrefabInstance:
       value: FireExtinguisher (130)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1837077487
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -29517,6 +30406,9 @@ PrefabInstance:
       value: FireExtinguisher (17)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1842004369 stripped
 Transform:
@@ -29529,6 +30421,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -29592,6 +30485,9 @@ PrefabInstance:
       value: FireExtinguisher (42)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1853537304 stripped
 Transform:
@@ -29610,6 +30506,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -29673,6 +30570,9 @@ PrefabInstance:
       value: FireExtinguisher (162)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1859822289 stripped
 Transform:
@@ -29704,8 +30604,8 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh25850
-  serializedVersion: 10
+  m_Name: pb_Mesh28512
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -29852,6 +30752,7 @@ Mesh:
     m_Center: {x: 0.31047773, y: 3.8238225, z: 2.0169754}
     m_Extent: {x: 11.983431, y: 7.3038287, z: 23.699066}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1.022906
@@ -29867,6 +30768,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -29930,6 +30832,9 @@ PrefabInstance:
       value: FireExtinguisher (58)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!43 &1876843716
 Mesh:
@@ -29937,8 +30842,8 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-90914
-  serializedVersion: 10
+  m_Name: pb_Mesh28134
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -30085,6 +30990,7 @@ Mesh:
     m_Center: {x: -0.89614916, y: 0.67830586, z: 0.41854286}
     m_Extent: {x: 0.89614916, y: 0.67830586, z: 1.9936228}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -30112,6 +31018,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -30175,12 +31082,16 @@ PrefabInstance:
       value: FireExtinguisher (140)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1889682551
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -30244,6 +31155,9 @@ PrefabInstance:
       value: FireExtinguisher (59)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!43 &1891522926
 Mesh:
@@ -30251,8 +31165,8 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-40492
-  serializedVersion: 10
+  m_Name: pb_Mesh28484
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -30399,6 +31313,7 @@ Mesh:
     m_Center: {x: 14.383038, y: 0.06764984, z: -10.887797}
     m_Extent: {x: 11.744293, y: 0.4324503, z: 4.011526}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -30426,6 +31341,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -30489,6 +31405,9 @@ PrefabInstance:
       value: FireExtinguisher (92)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1 &1896276163
 GameObject:
@@ -30519,9 +31438,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1896276163}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1891522926}
@@ -30896,6 +31823,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -30959,6 +31887,9 @@ PrefabInstance:
       value: FireExtinguisher (155)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!43 &1906469752
 Mesh:
@@ -30966,8 +31897,8 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-18400
-  serializedVersion: 10
+  m_Name: pb_Mesh27786
+  serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
     firstByte: 0
@@ -31114,6 +32045,7 @@ Mesh:
     m_Center: {x: 15.014378, y: 0.0001, z: -14.670605}
     m_Extent: {x: 12.375633, y: 0, z: 14.670605}
   m_MeshUsageFlags: 0
+  m_CookingOptions: 30
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshMetrics[0]: 1
@@ -31135,6 +32067,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -31198,6 +32131,9 @@ PrefabInstance:
       value: FireExtinguisher (82)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1918930958 stripped
 Transform:
@@ -31240,9 +32176,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1922880236}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1870793605}
@@ -33000,6 +33944,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -33063,12 +34008,16 @@ PrefabInstance:
       value: FireExtinguisher (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1930952482
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -33132,12 +34081,16 @@ PrefabInstance:
       value: FireExtinguisher (18)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1952966293
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -33201,6 +34154,9 @@ PrefabInstance:
       value: FireExtinguisher (93)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1958029506 stripped
 Transform:
@@ -33213,6 +34169,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -33276,6 +34233,9 @@ PrefabInstance:
       value: FireExtinguisher (41)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1960640147 stripped
 Transform:
@@ -33288,6 +34248,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -33351,6 +34312,9 @@ PrefabInstance:
       value: FireExtinguisher (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &1983939127 stripped
 Transform:
@@ -33369,6 +34333,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -33432,12 +34397,16 @@ PrefabInstance:
       value: FireExtinguisher (57)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1989469365
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -33501,12 +34470,16 @@ PrefabInstance:
       value: FireExtinguisher (113)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &1993677180
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -33570,6 +34543,9 @@ PrefabInstance:
       value: FireExtinguisher (39)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &2013431869 stripped
 Transform:
@@ -33600,6 +34576,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -33663,6 +34640,9 @@ PrefabInstance:
       value: FireExtinguisher (158)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &2033477423 stripped
 Transform:
@@ -33687,6 +34667,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -33750,6 +34731,9 @@ PrefabInstance:
       value: FireExtinguisher (154)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &2057436872 stripped
 Transform:
@@ -33762,6 +34746,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -33825,6 +34810,9 @@ PrefabInstance:
       value: FireExtinguisher (79)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &2062811079 stripped
 Transform:
@@ -33837,6 +34825,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -33900,12 +34889,16 @@ PrefabInstance:
       value: FireExtinguisher (78)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &2067263321
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -33969,6 +34962,9 @@ PrefabInstance:
       value: FireExtinguisher (68)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &2067872813 stripped
 Transform:
@@ -33993,6 +34989,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -34056,6 +35053,9 @@ PrefabInstance:
       value: FireExtinguisher (179)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &2077981244 stripped
 Transform:
@@ -34068,6 +35068,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -34131,6 +35132,9 @@ PrefabInstance:
       value: FireExtinguisher (98)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &2089206502 stripped
 Transform:
@@ -34143,6 +35147,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -34206,12 +35211,16 @@ PrefabInstance:
       value: FireExtinguisher (54)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &2098975113
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -34275,6 +35284,9 @@ PrefabInstance:
       value: FireExtinguisher (33)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!4 &2107671565 stripped
 Transform:
@@ -34323,9 +35335,17 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113051802}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
+  serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 686500914}
@@ -35596,6 +36616,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -35659,12 +36680,16 @@ PrefabInstance:
       value: FireExtinguisher (126)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &2122346126
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -35728,12 +36753,16 @@ PrefabInstance:
       value: FireExtinguisher (100)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &2133770850
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -35797,12 +36826,16 @@ PrefabInstance:
       value: FireExtinguisher (133)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
 --- !u!1001 &3911001399578602889
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 3911001399415616822, guid: de049e25f4abbf2439fa18c580120a4d,
@@ -35866,12 +36899,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de049e25f4abbf2439fa18c580120a4d, type: 3}
 --- !u!1001 &5059498176178984920
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 890492893}
     m_Modifications:
     - target: {fileID: 5059498175709570420, guid: fdb02cf92bb04b14da4a64a05186949a,
@@ -35935,4 +36972,7 @@ PrefabInstance:
       value: FireExtinguisher
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb02cf92bb04b14da4a64a05186949a, type: 3}
